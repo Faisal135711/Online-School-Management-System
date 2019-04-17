@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="3a1e3ba7d1b54d0c99715697ed35625b" Name="Diagram1" ZoomLevel="92">
+        <EntityTypeShape EntityType="OSMSModel.ADMIN" Width="1.5" PointX="0.75" PointY="15.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="OSMSModel.ATTENDANCE" Width="1.5" PointX="5.25" PointY="19.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="OSMSModel.CLASS" Width="1.5" PointX="3" PointY="16.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="OSMSModel.CLASSROUTINE" Width="1.5" PointX="5.25" PointY="15.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="OSMSModel.EVENT" Width="1.5" PointX="3" PointY="20.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="OSMSModel.GUARDIAN" Width="1.5" PointX="12.75" PointY="15.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="OSMSModel.GUARDIANREVIEW" Width="1.5" PointX="15" PointY="16.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="OSMSModel.PAYMENT" Width="1.5" PointX="12.75" PointY="20.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="OSMSModel.RESULT" Width="1.5" PointX="8.25" PointY="19.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="OSMSModel.SECTION" Width="1.5" PointX="8.25" PointY="14.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="OSMSModel.STUDENT" Width="1.5" PointX="10.5" PointY="15.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="OSMSModel.SUBJECT" Width="1.5" PointX="5.25" PointY="24.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="OSMSModel.TEACHER" Width="1.5" PointX="3" PointY="24.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="OSMSModel.TEACHER_ROUTINE" Width="1.5" PointX="8.25" PointY="24.25" IsExpanded="true" />
+        <AssociationConnector Association="OSMSModel.FK__ATTENDANC__Admin__5165187F" ManuallyRouted="false" />
+        <AssociationConnector Association="OSMSModel.FK__CLASS__Admin_ID__0AD2A005" ManuallyRouted="false" />
+        <AssociationConnector Association="OSMSModel.FK__CLASSROUT__Admin__47DBAE45" ManuallyRouted="false" />
+        <AssociationConnector Association="OSMSModel.FK__EVENT__Admin_ID__060DEAE8" ManuallyRouted="false" />
+        <AssociationConnector Association="OSMSModel.FK__GUARDIAN__Admin___2D27B809" ManuallyRouted="false" />
+        <AssociationConnector Association="OSMSModel.FK__RESULT__Admin_ID__5AEE82B9" ManuallyRouted="false" />
+        <AssociationConnector Association="OSMSModel.FK__SECTION__Admin_I__0F975522" ManuallyRouted="false" />
+        <AssociationConnector Association="OSMSModel.FK__STUDENT__Admin_I__239E4DCF" ManuallyRouted="false" />
+        <AssociationConnector Association="OSMSModel.FK__SUBJECT__Admin_I__3E52440B" ManuallyRouted="false" />
+        <AssociationConnector Association="OSMSModel.FK__TEACHER__Admin_I__164452B1" ManuallyRouted="false" />
+        <AssociationConnector Association="OSMSModel.FK__TEACHER_R__Admin__1ED998B2" ManuallyRouted="false" />
+        <AssociationConnector Association="OSMSModel.FK__ATTENDANC__Class__4D94879B" ManuallyRouted="false" />
+        <AssociationConnector Association="OSMSModel.FK__ATTENDANC__Secti__4E88ABD4" ManuallyRouted="false" />
+        <AssociationConnector Association="OSMSModel.FK__ATTENDANC__Stude__4CA06362" ManuallyRouted="false" />
+        <AssociationConnector Association="OSMSModel.FK__ATTENDANC__Subje__4F7CD00D" ManuallyRouted="false" />
+        <AssociationConnector Association="OSMSModel.FK__ATTENDANC__Teach__5070F446" ManuallyRouted="false" />
+        <AssociationConnector Association="OSMSModel.FK__CLASSROUT__Class__45F365D3" ManuallyRouted="false" />
+        <AssociationConnector Association="OSMSModel.FK__RESULT__Class_ID__571DF1D5" ManuallyRouted="false" />
+        <AssociationConnector Association="OSMSModel.FK__SECTION__Class_I__108B795B" ManuallyRouted="false" />
+        <AssociationConnector Association="OSMSModel.FK__STUDENT__Class_I__24927208" ManuallyRouted="false" />
+        <AssociationConnector Association="OSMSModel.FK__SUBJECT__Class_I__3C69FB99" ManuallyRouted="false" />
+        <AssociationConnector Association="OSMSModel.FK__CLASSROUT__Secti__46E78A0C" ManuallyRouted="false" />
+        <AssociationConnector Association="OSMSModel.FK__GUARDIAN__Studen__2E1BDC42" ManuallyRouted="false" />
+        <AssociationConnector Association="OSMSModel.FK__GUARDIANR__Guard__37A5467C" ManuallyRouted="false" />
+        <AssociationConnector Association="OSMSModel.FK__PAYMENT__Student__32E0915F" ManuallyRouted="false" />
+        <AssociationConnector Association="OSMSModel.FK__RESULT__Section___5812160E" ManuallyRouted="false" />
+        <AssociationConnector Association="OSMSModel.FK__RESULT__Student___5629CD9C" ManuallyRouted="false" />
+        <AssociationConnector Association="OSMSModel.FK__RESULT__Subject___59063A47" ManuallyRouted="false" />
+        <AssociationConnector Association="OSMSModel.FK__RESULT__Teacher___59FA5E80" ManuallyRouted="false" />
+        <AssociationConnector Association="OSMSModel.FK__STUDENT__Section__25869641" ManuallyRouted="false" />
+        <AssociationConnector Association="OSMSModel.FK__SUBJECT__Teacher__3D5E1FD2" ManuallyRouted="false" />
+        <AssociationConnector Association="OSMSModel.FK__TEACHER_R__Teach__1DE57479" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

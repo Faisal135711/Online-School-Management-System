@@ -1,0 +1,66 @@
+﻿@model OnlineSchool.Models.TEACHER
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>TEACHER</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.TeacherName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TeacherName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TeacherEmail)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TeacherEmail)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TeacherPassword)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TeacherPassword)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TeacherContactNumber)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TeacherContactNumber)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TeacherAddress)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TeacherAddress)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ADMIN.AdminName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ADMIN.AdminName)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Teacher_ID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

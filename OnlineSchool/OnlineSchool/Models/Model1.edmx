@@ -1,0 +1,1695 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="OSMSModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="ADMIN">
+          <Key>
+            <PropertyRef Name="Admin_ID" />
+          </Key>
+          <Property Name="Admin_ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="AdminName" Type="varchar" MaxLength="20" Nullable="false" />
+          <Property Name="AdminEmail" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="AdminPassword" Type="varchar" MaxLength="20" Nullable="false" />
+          <Property Name="AdminContactNumber" Type="varchar" MaxLength="20" Nullable="false" />
+          <Property Name="AdminAddress" Type="varchar" MaxLength="40" Nullable="false" />
+        </EntityType>
+        <EntityType Name="ATTENDANCE">
+          <Key>
+            <PropertyRef Name="Attendance_ID" />
+          </Key>
+          <Property Name="Attendance_ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Attendance_Date" Type="date" Nullable="false" />
+          <Property Name="Attendance_Status" Type="varchar" MaxLength="10" Nullable="false" />
+          <Property Name="Student_ID" Type="int" Nullable="false" />
+          <Property Name="Class_ID" Type="int" Nullable="false" />
+          <Property Name="Section_ID" Type="int" Nullable="false" />
+          <Property Name="Subject_ID" Type="int" Nullable="false" />
+          <Property Name="Teacher_ID" Type="int" Nullable="false" />
+          <Property Name="Admin_ID" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="CLASS">
+          <Key>
+            <PropertyRef Name="Class_ID" />
+          </Key>
+          <Property Name="Class_ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="ClassName" Type="varchar" MaxLength="10" Nullable="false" />
+          <Property Name="TotalSectons" Type="int" Nullable="false" />
+          <Property Name="TotalStudents" Type="int" Nullable="false" />
+          <Property Name="Admin_ID" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="CLASSROUTINE">
+          <Key>
+            <PropertyRef Name="ClassRoutine_ID" />
+          </Key>
+          <Property Name="ClassRoutine_ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="ClassRoutineDirectory" Type="varchar" MaxLength="3000" Nullable="false" />
+          <Property Name="Class_ID" Type="int" Nullable="false" />
+          <Property Name="Section_ID" Type="int" Nullable="false" />
+          <Property Name="Admin_ID" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="EVENT">
+          <Key>
+            <PropertyRef Name="Event_ID" />
+          </Key>
+          <Property Name="Event_ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Title" Type="varchar" MaxLength="100" Nullable="false" />
+          <Property Name="Description" Type="varchar" MaxLength="2000" Nullable="false" />
+          <Property Name="AnnouncementDate" Type="date" Nullable="false" />
+          <Property Name="IssuedBY" Type="varchar" MaxLength="30" Nullable="false" />
+          <Property Name="FileDirectory" Type="varchar" MaxLength="3000" />
+          <Property Name="ImageDirectory" Type="varchar" MaxLength="3000" />
+          <Property Name="Admin_ID" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="GUARDIAN">
+          <Key>
+            <PropertyRef Name="Guardian_ID" />
+          </Key>
+          <Property Name="Guardian_ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="GuardianName" Type="varchar" MaxLength="30" />
+          <Property Name="GuardianEmail" Type="varchar" MaxLength="50" />
+          <Property Name="GuardianPassword" Type="varchar" MaxLength="20" />
+          <Property Name="GuardianContactNumber" Type="varchar" MaxLength="20" />
+          <Property Name="GuardianAddress" Type="varchar" MaxLength="40" />
+          <Property Name="Admin_ID" Type="int" Nullable="false" />
+          <Property Name="Student_ID" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="GUARDIANREVIEW">
+          <Key>
+            <PropertyRef Name="Review_ID" />
+          </Key>
+          <Property Name="Review_ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="ReviewDescription" Type="varchar" MaxLength="1000" Nullable="false" />
+          <Property Name="Guardian_ID" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="PAYMENT">
+          <Key>
+            <PropertyRef Name="Payment_ID" />
+          </Key>
+          <Property Name="Payment_ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="PaymentAmount" Type="int" Nullable="false" />
+          <Property Name="PaymentDate" Type="date" Nullable="false" />
+          <Property Name="PaymentMonth" Type="varchar" MaxLength="10" Nullable="false" />
+          <Property Name="Student_ID" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="RESULT">
+          <Key>
+            <PropertyRef Name="Result_ID" />
+          </Key>
+          <Property Name="Result_ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="ExamDate" Type="date" Nullable="false" />
+          <Property Name="MarksObtained" Type="int" Nullable="false" />
+          <Property Name="Grade" Type="varchar" MaxLength="10" Nullable="false" />
+          <Property Name="Student_ID" Type="int" Nullable="false" />
+          <Property Name="Class_ID" Type="int" Nullable="false" />
+          <Property Name="Section_ID" Type="int" Nullable="false" />
+          <Property Name="Subject_ID" Type="int" Nullable="false" />
+          <Property Name="Teacher_ID" Type="int" Nullable="false" />
+          <Property Name="Admin_ID" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="SECTION">
+          <Key>
+            <PropertyRef Name="Section_ID" />
+          </Key>
+          <Property Name="Section_ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="SectionName" Type="varchar" MaxLength="30" Nullable="false" />
+          <Property Name="TotalStudents" Type="int" Nullable="false" />
+          <Property Name="Admin_ID" Type="int" Nullable="false" />
+          <Property Name="Class_ID" Type="int" Nullable="false" />
+          <Property Name="SectionGroup" Type="varchar" MaxLength="30" />
+        </EntityType>
+        <EntityType Name="STUDENT">
+          <Key>
+            <PropertyRef Name="Student_ID" />
+          </Key>
+          <Property Name="Student_ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="StudentName" Type="varchar" MaxLength="30" Nullable="false" />
+          <Property Name="StudentEmail" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="StudentPassword" Type="varchar" MaxLength="20" Nullable="false" />
+          <Property Name="StudentContactNumber" Type="varchar" MaxLength="20" Nullable="false" />
+          <Property Name="StudentAddress" Type="varchar" MaxLength="40" Nullable="false" />
+          <Property Name="Admin_ID" Type="int" Nullable="false" />
+          <Property Name="Class_ID" Type="int" Nullable="false" />
+          <Property Name="Section_ID" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="SUBJECT">
+          <Key>
+            <PropertyRef Name="Subject_ID" />
+          </Key>
+          <Property Name="Subject_ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="SubjectName" Type="varchar" MaxLength="30" Nullable="false" />
+          <Property Name="Class_ID" Type="int" Nullable="false" />
+          <Property Name="Teacher_ID" Type="int" Nullable="false" />
+          <Property Name="Admin_ID" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="TEACHER">
+          <Key>
+            <PropertyRef Name="Teacher_ID" />
+          </Key>
+          <Property Name="Teacher_ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="TeacherName" Type="varchar" MaxLength="30" Nullable="false" />
+          <Property Name="TeacherEmail" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="TeacherPassword" Type="varchar" MaxLength="20" Nullable="false" />
+          <Property Name="TeacherContactNumber" Type="varchar" MaxLength="20" Nullable="false" />
+          <Property Name="TeacherAddress" Type="varchar" MaxLength="40" Nullable="false" />
+          <Property Name="Admin_ID" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="TEACHER_ROUTINE">
+          <Key>
+            <PropertyRef Name="TeacherRoutine_ID" />
+          </Key>
+          <Property Name="TeacherRoutine_ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="TeacherRoutineDirectory" Type="varchar" MaxLength="3000" Nullable="false" />
+          <Property Name="Teacher_ID" Type="int" Nullable="false" />
+          <Property Name="Admin_ID" Type="int" Nullable="false" />
+        </EntityType>
+        <Association Name="FK__ATTENDANC__Admin__5165187F">
+          <End Role="ADMIN" Type="Self.ADMIN" Multiplicity="1" />
+          <End Role="ATTENDANCE" Type="Self.ATTENDANCE" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="ADMIN">
+              <PropertyRef Name="Admin_ID" />
+            </Principal>
+            <Dependent Role="ATTENDANCE">
+              <PropertyRef Name="Admin_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__ATTENDANC__Class__4D94879B">
+          <End Role="CLASS" Type="Self.CLASS" Multiplicity="1" />
+          <End Role="ATTENDANCE" Type="Self.ATTENDANCE" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="CLASS">
+              <PropertyRef Name="Class_ID" />
+            </Principal>
+            <Dependent Role="ATTENDANCE">
+              <PropertyRef Name="Class_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__ATTENDANC__Secti__4E88ABD4">
+          <End Role="SECTION" Type="Self.SECTION" Multiplicity="1" />
+          <End Role="ATTENDANCE" Type="Self.ATTENDANCE" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="SECTION">
+              <PropertyRef Name="Section_ID" />
+            </Principal>
+            <Dependent Role="ATTENDANCE">
+              <PropertyRef Name="Section_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__ATTENDANC__Stude__4CA06362">
+          <End Role="STUDENT" Type="Self.STUDENT" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="ATTENDANCE" Type="Self.ATTENDANCE" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="STUDENT">
+              <PropertyRef Name="Student_ID" />
+            </Principal>
+            <Dependent Role="ATTENDANCE">
+              <PropertyRef Name="Student_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__ATTENDANC__Subje__4F7CD00D">
+          <End Role="SUBJECT" Type="Self.SUBJECT" Multiplicity="1" />
+          <End Role="ATTENDANCE" Type="Self.ATTENDANCE" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="SUBJECT">
+              <PropertyRef Name="Subject_ID" />
+            </Principal>
+            <Dependent Role="ATTENDANCE">
+              <PropertyRef Name="Subject_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__ATTENDANC__Teach__5070F446">
+          <End Role="TEACHER" Type="Self.TEACHER" Multiplicity="1" />
+          <End Role="ATTENDANCE" Type="Self.ATTENDANCE" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="TEACHER">
+              <PropertyRef Name="Teacher_ID" />
+            </Principal>
+            <Dependent Role="ATTENDANCE">
+              <PropertyRef Name="Teacher_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__CLASS__Admin_ID__0AD2A005">
+          <End Role="ADMIN" Type="Self.ADMIN" Multiplicity="1" />
+          <End Role="CLASS" Type="Self.CLASS" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="ADMIN">
+              <PropertyRef Name="Admin_ID" />
+            </Principal>
+            <Dependent Role="CLASS">
+              <PropertyRef Name="Admin_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__CLASSROUT__Admin__47DBAE45">
+          <End Role="ADMIN" Type="Self.ADMIN" Multiplicity="1" />
+          <End Role="CLASSROUTINE" Type="Self.CLASSROUTINE" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="ADMIN">
+              <PropertyRef Name="Admin_ID" />
+            </Principal>
+            <Dependent Role="CLASSROUTINE">
+              <PropertyRef Name="Admin_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__CLASSROUT__Class__45F365D3">
+          <End Role="CLASS" Type="Self.CLASS" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="CLASSROUTINE" Type="Self.CLASSROUTINE" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="CLASS">
+              <PropertyRef Name="Class_ID" />
+            </Principal>
+            <Dependent Role="CLASSROUTINE">
+              <PropertyRef Name="Class_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__CLASSROUT__Secti__46E78A0C">
+          <End Role="SECTION" Type="Self.SECTION" Multiplicity="1" />
+          <End Role="CLASSROUTINE" Type="Self.CLASSROUTINE" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="SECTION">
+              <PropertyRef Name="Section_ID" />
+            </Principal>
+            <Dependent Role="CLASSROUTINE">
+              <PropertyRef Name="Section_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__EVENT__Admin_ID__060DEAE8">
+          <End Role="ADMIN" Type="Self.ADMIN" Multiplicity="1" />
+          <End Role="EVENT" Type="Self.EVENT" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="ADMIN">
+              <PropertyRef Name="Admin_ID" />
+            </Principal>
+            <Dependent Role="EVENT">
+              <PropertyRef Name="Admin_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__GUARDIAN__Admin___2D27B809">
+          <End Role="ADMIN" Type="Self.ADMIN" Multiplicity="1" />
+          <End Role="GUARDIAN" Type="Self.GUARDIAN" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="ADMIN">
+              <PropertyRef Name="Admin_ID" />
+            </Principal>
+            <Dependent Role="GUARDIAN">
+              <PropertyRef Name="Admin_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__GUARDIAN__Studen__2E1BDC42">
+          <End Role="STUDENT" Type="Self.STUDENT" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="GUARDIAN" Type="Self.GUARDIAN" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="STUDENT">
+              <PropertyRef Name="Student_ID" />
+            </Principal>
+            <Dependent Role="GUARDIAN">
+              <PropertyRef Name="Student_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__GUARDIANR__Guard__37A5467C">
+          <End Role="GUARDIAN" Type="Self.GUARDIAN" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="GUARDIANREVIEW" Type="Self.GUARDIANREVIEW" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="GUARDIAN">
+              <PropertyRef Name="Guardian_ID" />
+            </Principal>
+            <Dependent Role="GUARDIANREVIEW">
+              <PropertyRef Name="Guardian_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__PAYMENT__Student__32E0915F">
+          <End Role="STUDENT" Type="Self.STUDENT" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="PAYMENT" Type="Self.PAYMENT" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="STUDENT">
+              <PropertyRef Name="Student_ID" />
+            </Principal>
+            <Dependent Role="PAYMENT">
+              <PropertyRef Name="Student_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__RESULT__Admin_ID__5AEE82B9">
+          <End Role="ADMIN" Type="Self.ADMIN" Multiplicity="1" />
+          <End Role="RESULT" Type="Self.RESULT" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="ADMIN">
+              <PropertyRef Name="Admin_ID" />
+            </Principal>
+            <Dependent Role="RESULT">
+              <PropertyRef Name="Admin_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__RESULT__Class_ID__571DF1D5">
+          <End Role="CLASS" Type="Self.CLASS" Multiplicity="1" />
+          <End Role="RESULT" Type="Self.RESULT" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="CLASS">
+              <PropertyRef Name="Class_ID" />
+            </Principal>
+            <Dependent Role="RESULT">
+              <PropertyRef Name="Class_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__RESULT__Section___5812160E">
+          <End Role="SECTION" Type="Self.SECTION" Multiplicity="1" />
+          <End Role="RESULT" Type="Self.RESULT" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="SECTION">
+              <PropertyRef Name="Section_ID" />
+            </Principal>
+            <Dependent Role="RESULT">
+              <PropertyRef Name="Section_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__RESULT__Student___5629CD9C">
+          <End Role="STUDENT" Type="Self.STUDENT" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="RESULT" Type="Self.RESULT" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="STUDENT">
+              <PropertyRef Name="Student_ID" />
+            </Principal>
+            <Dependent Role="RESULT">
+              <PropertyRef Name="Student_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__RESULT__Subject___59063A47">
+          <End Role="SUBJECT" Type="Self.SUBJECT" Multiplicity="1" />
+          <End Role="RESULT" Type="Self.RESULT" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="SUBJECT">
+              <PropertyRef Name="Subject_ID" />
+            </Principal>
+            <Dependent Role="RESULT">
+              <PropertyRef Name="Subject_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__RESULT__Teacher___59FA5E80">
+          <End Role="TEACHER" Type="Self.TEACHER" Multiplicity="1" />
+          <End Role="RESULT" Type="Self.RESULT" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="TEACHER">
+              <PropertyRef Name="Teacher_ID" />
+            </Principal>
+            <Dependent Role="RESULT">
+              <PropertyRef Name="Teacher_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__SECTION__Admin_I__0F975522">
+          <End Role="ADMIN" Type="Self.ADMIN" Multiplicity="1" />
+          <End Role="SECTION" Type="Self.SECTION" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="ADMIN">
+              <PropertyRef Name="Admin_ID" />
+            </Principal>
+            <Dependent Role="SECTION">
+              <PropertyRef Name="Admin_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__SECTION__Class_I__108B795B">
+          <End Role="CLASS" Type="Self.CLASS" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="SECTION" Type="Self.SECTION" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="CLASS">
+              <PropertyRef Name="Class_ID" />
+            </Principal>
+            <Dependent Role="SECTION">
+              <PropertyRef Name="Class_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__STUDENT__Admin_I__239E4DCF">
+          <End Role="ADMIN" Type="Self.ADMIN" Multiplicity="1" />
+          <End Role="STUDENT" Type="Self.STUDENT" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="ADMIN">
+              <PropertyRef Name="Admin_ID" />
+            </Principal>
+            <Dependent Role="STUDENT">
+              <PropertyRef Name="Admin_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__STUDENT__Class_I__24927208">
+          <End Role="CLASS" Type="Self.CLASS" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="STUDENT" Type="Self.STUDENT" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="CLASS">
+              <PropertyRef Name="Class_ID" />
+            </Principal>
+            <Dependent Role="STUDENT">
+              <PropertyRef Name="Class_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__STUDENT__Section__25869641">
+          <End Role="SECTION" Type="Self.SECTION" Multiplicity="1" />
+          <End Role="STUDENT" Type="Self.STUDENT" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="SECTION">
+              <PropertyRef Name="Section_ID" />
+            </Principal>
+            <Dependent Role="STUDENT">
+              <PropertyRef Name="Section_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__SUBJECT__Admin_I__3E52440B">
+          <End Role="ADMIN" Type="Self.ADMIN" Multiplicity="1" />
+          <End Role="SUBJECT" Type="Self.SUBJECT" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="ADMIN">
+              <PropertyRef Name="Admin_ID" />
+            </Principal>
+            <Dependent Role="SUBJECT">
+              <PropertyRef Name="Admin_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__SUBJECT__Class_I__3C69FB99">
+          <End Role="CLASS" Type="Self.CLASS" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="SUBJECT" Type="Self.SUBJECT" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="CLASS">
+              <PropertyRef Name="Class_ID" />
+            </Principal>
+            <Dependent Role="SUBJECT">
+              <PropertyRef Name="Class_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__SUBJECT__Teacher__3D5E1FD2">
+          <End Role="TEACHER" Type="Self.TEACHER" Multiplicity="1" />
+          <End Role="SUBJECT" Type="Self.SUBJECT" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="TEACHER">
+              <PropertyRef Name="Teacher_ID" />
+            </Principal>
+            <Dependent Role="SUBJECT">
+              <PropertyRef Name="Teacher_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__TEACHER__Admin_I__164452B1">
+          <End Role="ADMIN" Type="Self.ADMIN" Multiplicity="1" />
+          <End Role="TEACHER" Type="Self.TEACHER" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="ADMIN">
+              <PropertyRef Name="Admin_ID" />
+            </Principal>
+            <Dependent Role="TEACHER">
+              <PropertyRef Name="Admin_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__TEACHER_R__Admin__1ED998B2">
+          <End Role="ADMIN" Type="Self.ADMIN" Multiplicity="1" />
+          <End Role="TEACHER_ROUTINE" Type="Self.TEACHER_ROUTINE" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="ADMIN">
+              <PropertyRef Name="Admin_ID" />
+            </Principal>
+            <Dependent Role="TEACHER_ROUTINE">
+              <PropertyRef Name="Admin_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__TEACHER_R__Teach__1DE57479">
+          <End Role="TEACHER" Type="Self.TEACHER" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="TEACHER_ROUTINE" Type="Self.TEACHER_ROUTINE" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="TEACHER">
+              <PropertyRef Name="Teacher_ID" />
+            </Principal>
+            <Dependent Role="TEACHER_ROUTINE">
+              <PropertyRef Name="Teacher_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="OSMSModelStoreContainer">
+          <EntitySet Name="ADMIN" EntityType="Self.ADMIN" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="ATTENDANCE" EntityType="Self.ATTENDANCE" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="CLASS" EntityType="Self.CLASS" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="CLASSROUTINE" EntityType="Self.CLASSROUTINE" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="EVENT" EntityType="Self.EVENT" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="GUARDIAN" EntityType="Self.GUARDIAN" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="GUARDIANREVIEW" EntityType="Self.GUARDIANREVIEW" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="PAYMENT" EntityType="Self.PAYMENT" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="RESULT" EntityType="Self.RESULT" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="SECTION" EntityType="Self.SECTION" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="STUDENT" EntityType="Self.STUDENT" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="SUBJECT" EntityType="Self.SUBJECT" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="TEACHER" EntityType="Self.TEACHER" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="TEACHER_ROUTINE" EntityType="Self.TEACHER_ROUTINE" Schema="dbo" store:Type="Tables" />
+          <AssociationSet Name="FK__ATTENDANC__Admin__5165187F" Association="Self.FK__ATTENDANC__Admin__5165187F">
+            <End Role="ADMIN" EntitySet="ADMIN" />
+            <End Role="ATTENDANCE" EntitySet="ATTENDANCE" />
+          </AssociationSet>
+          <AssociationSet Name="FK__ATTENDANC__Class__4D94879B" Association="Self.FK__ATTENDANC__Class__4D94879B">
+            <End Role="CLASS" EntitySet="CLASS" />
+            <End Role="ATTENDANCE" EntitySet="ATTENDANCE" />
+          </AssociationSet>
+          <AssociationSet Name="FK__ATTENDANC__Secti__4E88ABD4" Association="Self.FK__ATTENDANC__Secti__4E88ABD4">
+            <End Role="SECTION" EntitySet="SECTION" />
+            <End Role="ATTENDANCE" EntitySet="ATTENDANCE" />
+          </AssociationSet>
+          <AssociationSet Name="FK__ATTENDANC__Stude__4CA06362" Association="Self.FK__ATTENDANC__Stude__4CA06362">
+            <End Role="STUDENT" EntitySet="STUDENT" />
+            <End Role="ATTENDANCE" EntitySet="ATTENDANCE" />
+          </AssociationSet>
+          <AssociationSet Name="FK__ATTENDANC__Subje__4F7CD00D" Association="Self.FK__ATTENDANC__Subje__4F7CD00D">
+            <End Role="SUBJECT" EntitySet="SUBJECT" />
+            <End Role="ATTENDANCE" EntitySet="ATTENDANCE" />
+          </AssociationSet>
+          <AssociationSet Name="FK__ATTENDANC__Teach__5070F446" Association="Self.FK__ATTENDANC__Teach__5070F446">
+            <End Role="TEACHER" EntitySet="TEACHER" />
+            <End Role="ATTENDANCE" EntitySet="ATTENDANCE" />
+          </AssociationSet>
+          <AssociationSet Name="FK__CLASS__Admin_ID__0AD2A005" Association="Self.FK__CLASS__Admin_ID__0AD2A005">
+            <End Role="ADMIN" EntitySet="ADMIN" />
+            <End Role="CLASS" EntitySet="CLASS" />
+          </AssociationSet>
+          <AssociationSet Name="FK__CLASSROUT__Admin__47DBAE45" Association="Self.FK__CLASSROUT__Admin__47DBAE45">
+            <End Role="ADMIN" EntitySet="ADMIN" />
+            <End Role="CLASSROUTINE" EntitySet="CLASSROUTINE" />
+          </AssociationSet>
+          <AssociationSet Name="FK__CLASSROUT__Class__45F365D3" Association="Self.FK__CLASSROUT__Class__45F365D3">
+            <End Role="CLASS" EntitySet="CLASS" />
+            <End Role="CLASSROUTINE" EntitySet="CLASSROUTINE" />
+          </AssociationSet>
+          <AssociationSet Name="FK__CLASSROUT__Secti__46E78A0C" Association="Self.FK__CLASSROUT__Secti__46E78A0C">
+            <End Role="SECTION" EntitySet="SECTION" />
+            <End Role="CLASSROUTINE" EntitySet="CLASSROUTINE" />
+          </AssociationSet>
+          <AssociationSet Name="FK__EVENT__Admin_ID__060DEAE8" Association="Self.FK__EVENT__Admin_ID__060DEAE8">
+            <End Role="ADMIN" EntitySet="ADMIN" />
+            <End Role="EVENT" EntitySet="EVENT" />
+          </AssociationSet>
+          <AssociationSet Name="FK__GUARDIAN__Admin___2D27B809" Association="Self.FK__GUARDIAN__Admin___2D27B809">
+            <End Role="ADMIN" EntitySet="ADMIN" />
+            <End Role="GUARDIAN" EntitySet="GUARDIAN" />
+          </AssociationSet>
+          <AssociationSet Name="FK__GUARDIAN__Studen__2E1BDC42" Association="Self.FK__GUARDIAN__Studen__2E1BDC42">
+            <End Role="STUDENT" EntitySet="STUDENT" />
+            <End Role="GUARDIAN" EntitySet="GUARDIAN" />
+          </AssociationSet>
+          <AssociationSet Name="FK__GUARDIANR__Guard__37A5467C" Association="Self.FK__GUARDIANR__Guard__37A5467C">
+            <End Role="GUARDIAN" EntitySet="GUARDIAN" />
+            <End Role="GUARDIANREVIEW" EntitySet="GUARDIANREVIEW" />
+          </AssociationSet>
+          <AssociationSet Name="FK__PAYMENT__Student__32E0915F" Association="Self.FK__PAYMENT__Student__32E0915F">
+            <End Role="STUDENT" EntitySet="STUDENT" />
+            <End Role="PAYMENT" EntitySet="PAYMENT" />
+          </AssociationSet>
+          <AssociationSet Name="FK__RESULT__Admin_ID__5AEE82B9" Association="Self.FK__RESULT__Admin_ID__5AEE82B9">
+            <End Role="ADMIN" EntitySet="ADMIN" />
+            <End Role="RESULT" EntitySet="RESULT" />
+          </AssociationSet>
+          <AssociationSet Name="FK__RESULT__Class_ID__571DF1D5" Association="Self.FK__RESULT__Class_ID__571DF1D5">
+            <End Role="CLASS" EntitySet="CLASS" />
+            <End Role="RESULT" EntitySet="RESULT" />
+          </AssociationSet>
+          <AssociationSet Name="FK__RESULT__Section___5812160E" Association="Self.FK__RESULT__Section___5812160E">
+            <End Role="SECTION" EntitySet="SECTION" />
+            <End Role="RESULT" EntitySet="RESULT" />
+          </AssociationSet>
+          <AssociationSet Name="FK__RESULT__Student___5629CD9C" Association="Self.FK__RESULT__Student___5629CD9C">
+            <End Role="STUDENT" EntitySet="STUDENT" />
+            <End Role="RESULT" EntitySet="RESULT" />
+          </AssociationSet>
+          <AssociationSet Name="FK__RESULT__Subject___59063A47" Association="Self.FK__RESULT__Subject___59063A47">
+            <End Role="SUBJECT" EntitySet="SUBJECT" />
+            <End Role="RESULT" EntitySet="RESULT" />
+          </AssociationSet>
+          <AssociationSet Name="FK__RESULT__Teacher___59FA5E80" Association="Self.FK__RESULT__Teacher___59FA5E80">
+            <End Role="TEACHER" EntitySet="TEACHER" />
+            <End Role="RESULT" EntitySet="RESULT" />
+          </AssociationSet>
+          <AssociationSet Name="FK__SECTION__Admin_I__0F975522" Association="Self.FK__SECTION__Admin_I__0F975522">
+            <End Role="ADMIN" EntitySet="ADMIN" />
+            <End Role="SECTION" EntitySet="SECTION" />
+          </AssociationSet>
+          <AssociationSet Name="FK__SECTION__Class_I__108B795B" Association="Self.FK__SECTION__Class_I__108B795B">
+            <End Role="CLASS" EntitySet="CLASS" />
+            <End Role="SECTION" EntitySet="SECTION" />
+          </AssociationSet>
+          <AssociationSet Name="FK__STUDENT__Admin_I__239E4DCF" Association="Self.FK__STUDENT__Admin_I__239E4DCF">
+            <End Role="ADMIN" EntitySet="ADMIN" />
+            <End Role="STUDENT" EntitySet="STUDENT" />
+          </AssociationSet>
+          <AssociationSet Name="FK__STUDENT__Class_I__24927208" Association="Self.FK__STUDENT__Class_I__24927208">
+            <End Role="CLASS" EntitySet="CLASS" />
+            <End Role="STUDENT" EntitySet="STUDENT" />
+          </AssociationSet>
+          <AssociationSet Name="FK__STUDENT__Section__25869641" Association="Self.FK__STUDENT__Section__25869641">
+            <End Role="SECTION" EntitySet="SECTION" />
+            <End Role="STUDENT" EntitySet="STUDENT" />
+          </AssociationSet>
+          <AssociationSet Name="FK__SUBJECT__Admin_I__3E52440B" Association="Self.FK__SUBJECT__Admin_I__3E52440B">
+            <End Role="ADMIN" EntitySet="ADMIN" />
+            <End Role="SUBJECT" EntitySet="SUBJECT" />
+          </AssociationSet>
+          <AssociationSet Name="FK__SUBJECT__Class_I__3C69FB99" Association="Self.FK__SUBJECT__Class_I__3C69FB99">
+            <End Role="CLASS" EntitySet="CLASS" />
+            <End Role="SUBJECT" EntitySet="SUBJECT" />
+          </AssociationSet>
+          <AssociationSet Name="FK__SUBJECT__Teacher__3D5E1FD2" Association="Self.FK__SUBJECT__Teacher__3D5E1FD2">
+            <End Role="TEACHER" EntitySet="TEACHER" />
+            <End Role="SUBJECT" EntitySet="SUBJECT" />
+          </AssociationSet>
+          <AssociationSet Name="FK__TEACHER__Admin_I__164452B1" Association="Self.FK__TEACHER__Admin_I__164452B1">
+            <End Role="ADMIN" EntitySet="ADMIN" />
+            <End Role="TEACHER" EntitySet="TEACHER" />
+          </AssociationSet>
+          <AssociationSet Name="FK__TEACHER_R__Admin__1ED998B2" Association="Self.FK__TEACHER_R__Admin__1ED998B2">
+            <End Role="ADMIN" EntitySet="ADMIN" />
+            <End Role="TEACHER_ROUTINE" EntitySet="TEACHER_ROUTINE" />
+          </AssociationSet>
+          <AssociationSet Name="FK__TEACHER_R__Teach__1DE57479" Association="Self.FK__TEACHER_R__Teach__1DE57479">
+            <End Role="TEACHER" EntitySet="TEACHER" />
+            <End Role="TEACHER_ROUTINE" EntitySet="TEACHER_ROUTINE" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="OSMSModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="ADMIN">
+          <Key>
+            <PropertyRef Name="Admin_ID" />
+          </Key>
+          <Property Name="Admin_ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="AdminName" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="AdminEmail" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="AdminPassword" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="AdminContactNumber" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="AdminAddress" Type="String" MaxLength="40" FixedLength="false" Unicode="false" Nullable="false" />
+          <NavigationProperty Name="ATTENDANCEs" Relationship="Self.FK__ATTENDANC__Admin__5165187F" FromRole="ADMIN" ToRole="ATTENDANCE" />
+          <NavigationProperty Name="CLASSes" Relationship="Self.FK__CLASS__Admin_ID__0AD2A005" FromRole="ADMIN" ToRole="CLASS" />
+          <NavigationProperty Name="CLASSROUTINEs" Relationship="Self.FK__CLASSROUT__Admin__47DBAE45" FromRole="ADMIN" ToRole="CLASSROUTINE" />
+          <NavigationProperty Name="EVENTs" Relationship="Self.FK__EVENT__Admin_ID__060DEAE8" FromRole="ADMIN" ToRole="EVENT" />
+          <NavigationProperty Name="GUARDIANs" Relationship="Self.FK__GUARDIAN__Admin___2D27B809" FromRole="ADMIN" ToRole="GUARDIAN" />
+          <NavigationProperty Name="RESULTs" Relationship="Self.FK__RESULT__Admin_ID__5AEE82B9" FromRole="ADMIN" ToRole="RESULT" />
+          <NavigationProperty Name="SECTIONs" Relationship="Self.FK__SECTION__Admin_I__0F975522" FromRole="ADMIN" ToRole="SECTION" />
+          <NavigationProperty Name="STUDENTs" Relationship="Self.FK__STUDENT__Admin_I__239E4DCF" FromRole="ADMIN" ToRole="STUDENT" />
+          <NavigationProperty Name="SUBJECTs" Relationship="Self.FK__SUBJECT__Admin_I__3E52440B" FromRole="ADMIN" ToRole="SUBJECT" />
+          <NavigationProperty Name="TEACHERs" Relationship="Self.FK__TEACHER__Admin_I__164452B1" FromRole="ADMIN" ToRole="TEACHER" />
+          <NavigationProperty Name="TEACHER_ROUTINE" Relationship="Self.FK__TEACHER_R__Admin__1ED998B2" FromRole="ADMIN" ToRole="TEACHER_ROUTINE" />
+        </EntityType>
+        <EntityType Name="ATTENDANCE">
+          <Key>
+            <PropertyRef Name="Attendance_ID" />
+          </Key>
+          <Property Name="Attendance_ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Attendance_Date" Type="DateTime" Nullable="false" Precision="0" />
+          <Property Name="Attendance_Status" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Student_ID" Type="Int32" Nullable="false" />
+          <Property Name="Class_ID" Type="Int32" Nullable="false" />
+          <Property Name="Section_ID" Type="Int32" Nullable="false" />
+          <Property Name="Subject_ID" Type="Int32" Nullable="false" />
+          <Property Name="Teacher_ID" Type="Int32" Nullable="false" />
+          <Property Name="Admin_ID" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="ADMIN" Relationship="Self.FK__ATTENDANC__Admin__5165187F" FromRole="ATTENDANCE" ToRole="ADMIN" />
+          <NavigationProperty Name="CLASS" Relationship="Self.FK__ATTENDANC__Class__4D94879B" FromRole="ATTENDANCE" ToRole="CLASS" />
+          <NavigationProperty Name="SECTION" Relationship="Self.FK__ATTENDANC__Secti__4E88ABD4" FromRole="ATTENDANCE" ToRole="SECTION" />
+          <NavigationProperty Name="STUDENT" Relationship="Self.FK__ATTENDANC__Stude__4CA06362" FromRole="ATTENDANCE" ToRole="STUDENT" />
+          <NavigationProperty Name="SUBJECT" Relationship="Self.FK__ATTENDANC__Subje__4F7CD00D" FromRole="ATTENDANCE" ToRole="SUBJECT" />
+          <NavigationProperty Name="TEACHER" Relationship="Self.FK__ATTENDANC__Teach__5070F446" FromRole="ATTENDANCE" ToRole="TEACHER" />
+        </EntityType>
+        <EntityType Name="CLASS">
+          <Key>
+            <PropertyRef Name="Class_ID" />
+          </Key>
+          <Property Name="Class_ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="ClassName" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="TotalSectons" Type="Int32" Nullable="false" />
+          <Property Name="TotalStudents" Type="Int32" Nullable="false" />
+          <Property Name="Admin_ID" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="ADMIN" Relationship="Self.FK__CLASS__Admin_ID__0AD2A005" FromRole="CLASS" ToRole="ADMIN" />
+          <NavigationProperty Name="ATTENDANCEs" Relationship="Self.FK__ATTENDANC__Class__4D94879B" FromRole="CLASS" ToRole="ATTENDANCE" />
+          <NavigationProperty Name="CLASSROUTINEs" Relationship="Self.FK__CLASSROUT__Class__45F365D3" FromRole="CLASS" ToRole="CLASSROUTINE" />
+          <NavigationProperty Name="RESULTs" Relationship="Self.FK__RESULT__Class_ID__571DF1D5" FromRole="CLASS" ToRole="RESULT" />
+          <NavigationProperty Name="SECTIONs" Relationship="Self.FK__SECTION__Class_I__108B795B" FromRole="CLASS" ToRole="SECTION" />
+          <NavigationProperty Name="STUDENTs" Relationship="Self.FK__STUDENT__Class_I__24927208" FromRole="CLASS" ToRole="STUDENT" />
+          <NavigationProperty Name="SUBJECTs" Relationship="Self.FK__SUBJECT__Class_I__3C69FB99" FromRole="CLASS" ToRole="SUBJECT" />
+        </EntityType>
+        <EntityType Name="CLASSROUTINE">
+          <Key>
+            <PropertyRef Name="ClassRoutine_ID" />
+          </Key>
+          <Property Name="ClassRoutine_ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="ClassRoutineDirectory" Type="String" MaxLength="3000" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Class_ID" Type="Int32" Nullable="false" />
+          <Property Name="Section_ID" Type="Int32" Nullable="false" />
+          <Property Name="Admin_ID" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="ADMIN" Relationship="Self.FK__CLASSROUT__Admin__47DBAE45" FromRole="CLASSROUTINE" ToRole="ADMIN" />
+          <NavigationProperty Name="CLASS" Relationship="Self.FK__CLASSROUT__Class__45F365D3" FromRole="CLASSROUTINE" ToRole="CLASS" />
+          <NavigationProperty Name="SECTION" Relationship="Self.FK__CLASSROUT__Secti__46E78A0C" FromRole="CLASSROUTINE" ToRole="SECTION" />
+        </EntityType>
+        <EntityType Name="EVENT">
+          <Key>
+            <PropertyRef Name="Event_ID" />
+          </Key>
+          <Property Name="Event_ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Title" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Description" Type="String" MaxLength="2000" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="AnnouncementDate" Type="DateTime" Nullable="false" Precision="0" />
+          <Property Name="IssuedBY" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="FileDirectory" Type="String" MaxLength="3000" FixedLength="false" Unicode="false" />
+          <Property Name="ImageDirectory" Type="String" MaxLength="3000" FixedLength="false" Unicode="false" />
+          <Property Name="Admin_ID" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="ADMIN" Relationship="Self.FK__EVENT__Admin_ID__060DEAE8" FromRole="EVENT" ToRole="ADMIN" />
+        </EntityType>
+        <EntityType Name="GUARDIAN">
+          <Key>
+            <PropertyRef Name="Guardian_ID" />
+          </Key>
+          <Property Name="Guardian_ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="GuardianName" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+          <Property Name="GuardianEmail" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="GuardianPassword" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="GuardianContactNumber" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="GuardianAddress" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
+          <Property Name="Admin_ID" Type="Int32" Nullable="false" />
+          <Property Name="Student_ID" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="ADMIN" Relationship="Self.FK__GUARDIAN__Admin___2D27B809" FromRole="GUARDIAN" ToRole="ADMIN" />
+          <NavigationProperty Name="STUDENT" Relationship="Self.FK__GUARDIAN__Studen__2E1BDC42" FromRole="GUARDIAN" ToRole="STUDENT" />
+          <NavigationProperty Name="GUARDIANREVIEWs" Relationship="Self.FK__GUARDIANR__Guard__37A5467C" FromRole="GUARDIAN" ToRole="GUARDIANREVIEW" />
+        </EntityType>
+        <EntityType Name="GUARDIANREVIEW">
+          <Key>
+            <PropertyRef Name="Review_ID" />
+          </Key>
+          <Property Name="Review_ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="ReviewDescription" Type="String" MaxLength="1000" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Guardian_ID" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="GUARDIAN" Relationship="Self.FK__GUARDIANR__Guard__37A5467C" FromRole="GUARDIANREVIEW" ToRole="GUARDIAN" />
+        </EntityType>
+        <EntityType Name="PAYMENT">
+          <Key>
+            <PropertyRef Name="Payment_ID" />
+          </Key>
+          <Property Name="Payment_ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="PaymentAmount" Type="Int32" Nullable="false" />
+          <Property Name="PaymentDate" Type="DateTime" Nullable="false" Precision="0" />
+          <Property Name="PaymentMonth" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Student_ID" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="STUDENT" Relationship="Self.FK__PAYMENT__Student__32E0915F" FromRole="PAYMENT" ToRole="STUDENT" />
+        </EntityType>
+        <EntityType Name="RESULT">
+          <Key>
+            <PropertyRef Name="Result_ID" />
+          </Key>
+          <Property Name="Result_ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="ExamDate" Type="DateTime" Nullable="false" Precision="0" />
+          <Property Name="MarksObtained" Type="Int32" Nullable="false" />
+          <Property Name="Grade" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Student_ID" Type="Int32" Nullable="false" />
+          <Property Name="Class_ID" Type="Int32" Nullable="false" />
+          <Property Name="Section_ID" Type="Int32" Nullable="false" />
+          <Property Name="Subject_ID" Type="Int32" Nullable="false" />
+          <Property Name="Teacher_ID" Type="Int32" Nullable="false" />
+          <Property Name="Admin_ID" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="ADMIN" Relationship="Self.FK__RESULT__Admin_ID__5AEE82B9" FromRole="RESULT" ToRole="ADMIN" />
+          <NavigationProperty Name="CLASS" Relationship="Self.FK__RESULT__Class_ID__571DF1D5" FromRole="RESULT" ToRole="CLASS" />
+          <NavigationProperty Name="SECTION" Relationship="Self.FK__RESULT__Section___5812160E" FromRole="RESULT" ToRole="SECTION" />
+          <NavigationProperty Name="STUDENT" Relationship="Self.FK__RESULT__Student___5629CD9C" FromRole="RESULT" ToRole="STUDENT" />
+          <NavigationProperty Name="SUBJECT" Relationship="Self.FK__RESULT__Subject___59063A47" FromRole="RESULT" ToRole="SUBJECT" />
+          <NavigationProperty Name="TEACHER" Relationship="Self.FK__RESULT__Teacher___59FA5E80" FromRole="RESULT" ToRole="TEACHER" />
+        </EntityType>
+        <EntityType Name="SECTION">
+          <Key>
+            <PropertyRef Name="Section_ID" />
+          </Key>
+          <Property Name="Section_ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="SectionName" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="TotalStudents" Type="Int32" Nullable="false" />
+          <Property Name="Admin_ID" Type="Int32" Nullable="false" />
+          <Property Name="Class_ID" Type="Int32" Nullable="false" />
+          <Property Name="SectionGroup" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="ADMIN" Relationship="Self.FK__SECTION__Admin_I__0F975522" FromRole="SECTION" ToRole="ADMIN" />
+          <NavigationProperty Name="ATTENDANCEs" Relationship="Self.FK__ATTENDANC__Secti__4E88ABD4" FromRole="SECTION" ToRole="ATTENDANCE" />
+          <NavigationProperty Name="CLASS" Relationship="Self.FK__SECTION__Class_I__108B795B" FromRole="SECTION" ToRole="CLASS" />
+          <NavigationProperty Name="CLASSROUTINEs" Relationship="Self.FK__CLASSROUT__Secti__46E78A0C" FromRole="SECTION" ToRole="CLASSROUTINE" />
+          <NavigationProperty Name="RESULTs" Relationship="Self.FK__RESULT__Section___5812160E" FromRole="SECTION" ToRole="RESULT" />
+          <NavigationProperty Name="STUDENTs" Relationship="Self.FK__STUDENT__Section__25869641" FromRole="SECTION" ToRole="STUDENT" />
+        </EntityType>
+        <EntityType Name="STUDENT">
+          <Key>
+            <PropertyRef Name="Student_ID" />
+          </Key>
+          <Property Name="Student_ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="StudentName" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="StudentEmail" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="StudentPassword" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="StudentContactNumber" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="StudentAddress" Type="String" MaxLength="40" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Admin_ID" Type="Int32" Nullable="false" />
+          <Property Name="Class_ID" Type="Int32" Nullable="false" />
+          <Property Name="Section_ID" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="ADMIN" Relationship="Self.FK__STUDENT__Admin_I__239E4DCF" FromRole="STUDENT" ToRole="ADMIN" />
+          <NavigationProperty Name="ATTENDANCEs" Relationship="Self.FK__ATTENDANC__Stude__4CA06362" FromRole="STUDENT" ToRole="ATTENDANCE" />
+          <NavigationProperty Name="CLASS" Relationship="Self.FK__STUDENT__Class_I__24927208" FromRole="STUDENT" ToRole="CLASS" />
+          <NavigationProperty Name="GUARDIANs" Relationship="Self.FK__GUARDIAN__Studen__2E1BDC42" FromRole="STUDENT" ToRole="GUARDIAN" />
+          <NavigationProperty Name="PAYMENTs" Relationship="Self.FK__PAYMENT__Student__32E0915F" FromRole="STUDENT" ToRole="PAYMENT" />
+          <NavigationProperty Name="RESULTs" Relationship="Self.FK__RESULT__Student___5629CD9C" FromRole="STUDENT" ToRole="RESULT" />
+          <NavigationProperty Name="SECTION" Relationship="Self.FK__STUDENT__Section__25869641" FromRole="STUDENT" ToRole="SECTION" />
+        </EntityType>
+        <EntityType Name="SUBJECT">
+          <Key>
+            <PropertyRef Name="Subject_ID" />
+          </Key>
+          <Property Name="Subject_ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="SubjectName" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Class_ID" Type="Int32" Nullable="false" />
+          <Property Name="Teacher_ID" Type="Int32" Nullable="false" />
+          <Property Name="Admin_ID" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="ADMIN" Relationship="Self.FK__SUBJECT__Admin_I__3E52440B" FromRole="SUBJECT" ToRole="ADMIN" />
+          <NavigationProperty Name="ATTENDANCEs" Relationship="Self.FK__ATTENDANC__Subje__4F7CD00D" FromRole="SUBJECT" ToRole="ATTENDANCE" />
+          <NavigationProperty Name="CLASS" Relationship="Self.FK__SUBJECT__Class_I__3C69FB99" FromRole="SUBJECT" ToRole="CLASS" />
+          <NavigationProperty Name="RESULTs" Relationship="Self.FK__RESULT__Subject___59063A47" FromRole="SUBJECT" ToRole="RESULT" />
+          <NavigationProperty Name="TEACHER" Relationship="Self.FK__SUBJECT__Teacher__3D5E1FD2" FromRole="SUBJECT" ToRole="TEACHER" />
+        </EntityType>
+        <EntityType Name="TEACHER">
+          <Key>
+            <PropertyRef Name="Teacher_ID" />
+          </Key>
+          <Property Name="Teacher_ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="TeacherName" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="TeacherEmail" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="TeacherPassword" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="TeacherContactNumber" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="TeacherAddress" Type="String" MaxLength="40" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Admin_ID" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="ADMIN" Relationship="Self.FK__TEACHER__Admin_I__164452B1" FromRole="TEACHER" ToRole="ADMIN" />
+          <NavigationProperty Name="ATTENDANCEs" Relationship="Self.FK__ATTENDANC__Teach__5070F446" FromRole="TEACHER" ToRole="ATTENDANCE" />
+          <NavigationProperty Name="RESULTs" Relationship="Self.FK__RESULT__Teacher___59FA5E80" FromRole="TEACHER" ToRole="RESULT" />
+          <NavigationProperty Name="SUBJECTs" Relationship="Self.FK__SUBJECT__Teacher__3D5E1FD2" FromRole="TEACHER" ToRole="SUBJECT" />
+          <NavigationProperty Name="TEACHER_ROUTINE" Relationship="Self.FK__TEACHER_R__Teach__1DE57479" FromRole="TEACHER" ToRole="TEACHER_ROUTINE" />
+        </EntityType>
+        <EntityType Name="TEACHER_ROUTINE">
+          <Key>
+            <PropertyRef Name="TeacherRoutine_ID" />
+          </Key>
+          <Property Name="TeacherRoutine_ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="TeacherRoutineDirectory" Type="String" MaxLength="3000" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Teacher_ID" Type="Int32" Nullable="false" />
+          <Property Name="Admin_ID" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="ADMIN" Relationship="Self.FK__TEACHER_R__Admin__1ED998B2" FromRole="TEACHER_ROUTINE" ToRole="ADMIN" />
+          <NavigationProperty Name="TEACHER" Relationship="Self.FK__TEACHER_R__Teach__1DE57479" FromRole="TEACHER_ROUTINE" ToRole="TEACHER" />
+        </EntityType>
+        <Association Name="FK__ATTENDANC__Admin__5165187F">
+          <End Role="ADMIN" Type="Self.ADMIN" Multiplicity="1" />
+          <End Role="ATTENDANCE" Type="Self.ATTENDANCE" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="ADMIN">
+              <PropertyRef Name="Admin_ID" />
+            </Principal>
+            <Dependent Role="ATTENDANCE">
+              <PropertyRef Name="Admin_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__CLASS__Admin_ID__0AD2A005">
+          <End Role="ADMIN" Type="Self.ADMIN" Multiplicity="1" />
+          <End Role="CLASS" Type="Self.CLASS" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="ADMIN">
+              <PropertyRef Name="Admin_ID" />
+            </Principal>
+            <Dependent Role="CLASS">
+              <PropertyRef Name="Admin_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__CLASSROUT__Admin__47DBAE45">
+          <End Role="ADMIN" Type="Self.ADMIN" Multiplicity="1" />
+          <End Role="CLASSROUTINE" Type="Self.CLASSROUTINE" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="ADMIN">
+              <PropertyRef Name="Admin_ID" />
+            </Principal>
+            <Dependent Role="CLASSROUTINE">
+              <PropertyRef Name="Admin_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__EVENT__Admin_ID__060DEAE8">
+          <End Role="ADMIN" Type="Self.ADMIN" Multiplicity="1" />
+          <End Role="EVENT" Type="Self.EVENT" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="ADMIN">
+              <PropertyRef Name="Admin_ID" />
+            </Principal>
+            <Dependent Role="EVENT">
+              <PropertyRef Name="Admin_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__GUARDIAN__Admin___2D27B809">
+          <End Role="ADMIN" Type="Self.ADMIN" Multiplicity="1" />
+          <End Role="GUARDIAN" Type="Self.GUARDIAN" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="ADMIN">
+              <PropertyRef Name="Admin_ID" />
+            </Principal>
+            <Dependent Role="GUARDIAN">
+              <PropertyRef Name="Admin_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__RESULT__Admin_ID__5AEE82B9">
+          <End Role="ADMIN" Type="Self.ADMIN" Multiplicity="1" />
+          <End Role="RESULT" Type="Self.RESULT" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="ADMIN">
+              <PropertyRef Name="Admin_ID" />
+            </Principal>
+            <Dependent Role="RESULT">
+              <PropertyRef Name="Admin_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__SECTION__Admin_I__0F975522">
+          <End Role="ADMIN" Type="Self.ADMIN" Multiplicity="1" />
+          <End Role="SECTION" Type="Self.SECTION" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="ADMIN">
+              <PropertyRef Name="Admin_ID" />
+            </Principal>
+            <Dependent Role="SECTION">
+              <PropertyRef Name="Admin_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__STUDENT__Admin_I__239E4DCF">
+          <End Role="ADMIN" Type="Self.ADMIN" Multiplicity="1" />
+          <End Role="STUDENT" Type="Self.STUDENT" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="ADMIN">
+              <PropertyRef Name="Admin_ID" />
+            </Principal>
+            <Dependent Role="STUDENT">
+              <PropertyRef Name="Admin_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__SUBJECT__Admin_I__3E52440B">
+          <End Role="ADMIN" Type="Self.ADMIN" Multiplicity="1" />
+          <End Role="SUBJECT" Type="Self.SUBJECT" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="ADMIN">
+              <PropertyRef Name="Admin_ID" />
+            </Principal>
+            <Dependent Role="SUBJECT">
+              <PropertyRef Name="Admin_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__TEACHER__Admin_I__164452B1">
+          <End Role="ADMIN" Type="Self.ADMIN" Multiplicity="1" />
+          <End Role="TEACHER" Type="Self.TEACHER" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="ADMIN">
+              <PropertyRef Name="Admin_ID" />
+            </Principal>
+            <Dependent Role="TEACHER">
+              <PropertyRef Name="Admin_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__TEACHER_R__Admin__1ED998B2">
+          <End Role="ADMIN" Type="Self.ADMIN" Multiplicity="1" />
+          <End Role="TEACHER_ROUTINE" Type="Self.TEACHER_ROUTINE" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="ADMIN">
+              <PropertyRef Name="Admin_ID" />
+            </Principal>
+            <Dependent Role="TEACHER_ROUTINE">
+              <PropertyRef Name="Admin_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__ATTENDANC__Class__4D94879B">
+          <End Role="CLASS" Type="Self.CLASS" Multiplicity="1" />
+          <End Role="ATTENDANCE" Type="Self.ATTENDANCE" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="CLASS">
+              <PropertyRef Name="Class_ID" />
+            </Principal>
+            <Dependent Role="ATTENDANCE">
+              <PropertyRef Name="Class_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__ATTENDANC__Secti__4E88ABD4">
+          <End Role="SECTION" Type="Self.SECTION" Multiplicity="1" />
+          <End Role="ATTENDANCE" Type="Self.ATTENDANCE" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="SECTION">
+              <PropertyRef Name="Section_ID" />
+            </Principal>
+            <Dependent Role="ATTENDANCE">
+              <PropertyRef Name="Section_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__ATTENDANC__Stude__4CA06362">
+          <End Role="STUDENT" Type="Self.STUDENT" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="ATTENDANCE" Type="Self.ATTENDANCE" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="STUDENT">
+              <PropertyRef Name="Student_ID" />
+            </Principal>
+            <Dependent Role="ATTENDANCE">
+              <PropertyRef Name="Student_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__ATTENDANC__Subje__4F7CD00D">
+          <End Role="SUBJECT" Type="Self.SUBJECT" Multiplicity="1" />
+          <End Role="ATTENDANCE" Type="Self.ATTENDANCE" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="SUBJECT">
+              <PropertyRef Name="Subject_ID" />
+            </Principal>
+            <Dependent Role="ATTENDANCE">
+              <PropertyRef Name="Subject_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__ATTENDANC__Teach__5070F446">
+          <End Role="TEACHER" Type="Self.TEACHER" Multiplicity="1" />
+          <End Role="ATTENDANCE" Type="Self.ATTENDANCE" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="TEACHER">
+              <PropertyRef Name="Teacher_ID" />
+            </Principal>
+            <Dependent Role="ATTENDANCE">
+              <PropertyRef Name="Teacher_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__CLASSROUT__Class__45F365D3">
+          <End Role="CLASS" Type="Self.CLASS" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="CLASSROUTINE" Type="Self.CLASSROUTINE" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="CLASS">
+              <PropertyRef Name="Class_ID" />
+            </Principal>
+            <Dependent Role="CLASSROUTINE">
+              <PropertyRef Name="Class_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__RESULT__Class_ID__571DF1D5">
+          <End Role="CLASS" Type="Self.CLASS" Multiplicity="1" />
+          <End Role="RESULT" Type="Self.RESULT" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="CLASS">
+              <PropertyRef Name="Class_ID" />
+            </Principal>
+            <Dependent Role="RESULT">
+              <PropertyRef Name="Class_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__SECTION__Class_I__108B795B">
+          <End Role="CLASS" Type="Self.CLASS" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="SECTION" Type="Self.SECTION" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="CLASS">
+              <PropertyRef Name="Class_ID" />
+            </Principal>
+            <Dependent Role="SECTION">
+              <PropertyRef Name="Class_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__STUDENT__Class_I__24927208">
+          <End Role="CLASS" Type="Self.CLASS" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="STUDENT" Type="Self.STUDENT" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="CLASS">
+              <PropertyRef Name="Class_ID" />
+            </Principal>
+            <Dependent Role="STUDENT">
+              <PropertyRef Name="Class_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__SUBJECT__Class_I__3C69FB99">
+          <End Role="CLASS" Type="Self.CLASS" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="SUBJECT" Type="Self.SUBJECT" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="CLASS">
+              <PropertyRef Name="Class_ID" />
+            </Principal>
+            <Dependent Role="SUBJECT">
+              <PropertyRef Name="Class_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__CLASSROUT__Secti__46E78A0C">
+          <End Role="SECTION" Type="Self.SECTION" Multiplicity="1" />
+          <End Role="CLASSROUTINE" Type="Self.CLASSROUTINE" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="SECTION">
+              <PropertyRef Name="Section_ID" />
+            </Principal>
+            <Dependent Role="CLASSROUTINE">
+              <PropertyRef Name="Section_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__GUARDIAN__Studen__2E1BDC42">
+          <End Role="STUDENT" Type="Self.STUDENT" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="GUARDIAN" Type="Self.GUARDIAN" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="STUDENT">
+              <PropertyRef Name="Student_ID" />
+            </Principal>
+            <Dependent Role="GUARDIAN">
+              <PropertyRef Name="Student_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__GUARDIANR__Guard__37A5467C">
+          <End Role="GUARDIAN" Type="Self.GUARDIAN" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="GUARDIANREVIEW" Type="Self.GUARDIANREVIEW" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="GUARDIAN">
+              <PropertyRef Name="Guardian_ID" />
+            </Principal>
+            <Dependent Role="GUARDIANREVIEW">
+              <PropertyRef Name="Guardian_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__PAYMENT__Student__32E0915F">
+          <End Role="STUDENT" Type="Self.STUDENT" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="PAYMENT" Type="Self.PAYMENT" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="STUDENT">
+              <PropertyRef Name="Student_ID" />
+            </Principal>
+            <Dependent Role="PAYMENT">
+              <PropertyRef Name="Student_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__RESULT__Section___5812160E">
+          <End Role="SECTION" Type="Self.SECTION" Multiplicity="1" />
+          <End Role="RESULT" Type="Self.RESULT" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="SECTION">
+              <PropertyRef Name="Section_ID" />
+            </Principal>
+            <Dependent Role="RESULT">
+              <PropertyRef Name="Section_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__RESULT__Student___5629CD9C">
+          <End Role="STUDENT" Type="Self.STUDENT" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="RESULT" Type="Self.RESULT" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="STUDENT">
+              <PropertyRef Name="Student_ID" />
+            </Principal>
+            <Dependent Role="RESULT">
+              <PropertyRef Name="Student_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__RESULT__Subject___59063A47">
+          <End Role="SUBJECT" Type="Self.SUBJECT" Multiplicity="1" />
+          <End Role="RESULT" Type="Self.RESULT" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="SUBJECT">
+              <PropertyRef Name="Subject_ID" />
+            </Principal>
+            <Dependent Role="RESULT">
+              <PropertyRef Name="Subject_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__RESULT__Teacher___59FA5E80">
+          <End Role="TEACHER" Type="Self.TEACHER" Multiplicity="1" />
+          <End Role="RESULT" Type="Self.RESULT" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="TEACHER">
+              <PropertyRef Name="Teacher_ID" />
+            </Principal>
+            <Dependent Role="RESULT">
+              <PropertyRef Name="Teacher_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__STUDENT__Section__25869641">
+          <End Role="SECTION" Type="Self.SECTION" Multiplicity="1" />
+          <End Role="STUDENT" Type="Self.STUDENT" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="SECTION">
+              <PropertyRef Name="Section_ID" />
+            </Principal>
+            <Dependent Role="STUDENT">
+              <PropertyRef Name="Section_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__SUBJECT__Teacher__3D5E1FD2">
+          <End Role="TEACHER" Type="Self.TEACHER" Multiplicity="1" />
+          <End Role="SUBJECT" Type="Self.SUBJECT" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="TEACHER">
+              <PropertyRef Name="Teacher_ID" />
+            </Principal>
+            <Dependent Role="SUBJECT">
+              <PropertyRef Name="Teacher_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__TEACHER_R__Teach__1DE57479">
+          <End Role="TEACHER" Type="Self.TEACHER" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="TEACHER_ROUTINE" Type="Self.TEACHER_ROUTINE" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="TEACHER">
+              <PropertyRef Name="Teacher_ID" />
+            </Principal>
+            <Dependent Role="TEACHER_ROUTINE">
+              <PropertyRef Name="Teacher_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="OSMSEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="ADMINs" EntityType="Self.ADMIN" />
+          <EntitySet Name="ATTENDANCEs" EntityType="Self.ATTENDANCE" />
+          <EntitySet Name="CLASSes" EntityType="Self.CLASS" />
+          <EntitySet Name="CLASSROUTINEs" EntityType="Self.CLASSROUTINE" />
+          <EntitySet Name="EVENTs" EntityType="Self.EVENT" />
+          <EntitySet Name="GUARDIANs" EntityType="Self.GUARDIAN" />
+          <EntitySet Name="GUARDIANREVIEWs" EntityType="Self.GUARDIANREVIEW" />
+          <EntitySet Name="PAYMENTs" EntityType="Self.PAYMENT" />
+          <EntitySet Name="RESULTs" EntityType="Self.RESULT" />
+          <EntitySet Name="SECTIONs" EntityType="Self.SECTION" />
+          <EntitySet Name="STUDENTs" EntityType="Self.STUDENT" />
+          <EntitySet Name="SUBJECTs" EntityType="Self.SUBJECT" />
+          <EntitySet Name="TEACHERs" EntityType="Self.TEACHER" />
+          <EntitySet Name="TEACHER_ROUTINE" EntityType="Self.TEACHER_ROUTINE" />
+          <AssociationSet Name="FK__ATTENDANC__Admin__5165187F" Association="Self.FK__ATTENDANC__Admin__5165187F">
+            <End Role="ADMIN" EntitySet="ADMINs" />
+            <End Role="ATTENDANCE" EntitySet="ATTENDANCEs" />
+          </AssociationSet>
+          <AssociationSet Name="FK__CLASS__Admin_ID__0AD2A005" Association="Self.FK__CLASS__Admin_ID__0AD2A005">
+            <End Role="ADMIN" EntitySet="ADMINs" />
+            <End Role="CLASS" EntitySet="CLASSes" />
+          </AssociationSet>
+          <AssociationSet Name="FK__CLASSROUT__Admin__47DBAE45" Association="Self.FK__CLASSROUT__Admin__47DBAE45">
+            <End Role="ADMIN" EntitySet="ADMINs" />
+            <End Role="CLASSROUTINE" EntitySet="CLASSROUTINEs" />
+          </AssociationSet>
+          <AssociationSet Name="FK__EVENT__Admin_ID__060DEAE8" Association="Self.FK__EVENT__Admin_ID__060DEAE8">
+            <End Role="ADMIN" EntitySet="ADMINs" />
+            <End Role="EVENT" EntitySet="EVENTs" />
+          </AssociationSet>
+          <AssociationSet Name="FK__GUARDIAN__Admin___2D27B809" Association="Self.FK__GUARDIAN__Admin___2D27B809">
+            <End Role="ADMIN" EntitySet="ADMINs" />
+            <End Role="GUARDIAN" EntitySet="GUARDIANs" />
+          </AssociationSet>
+          <AssociationSet Name="FK__RESULT__Admin_ID__5AEE82B9" Association="Self.FK__RESULT__Admin_ID__5AEE82B9">
+            <End Role="ADMIN" EntitySet="ADMINs" />
+            <End Role="RESULT" EntitySet="RESULTs" />
+          </AssociationSet>
+          <AssociationSet Name="FK__SECTION__Admin_I__0F975522" Association="Self.FK__SECTION__Admin_I__0F975522">
+            <End Role="ADMIN" EntitySet="ADMINs" />
+            <End Role="SECTION" EntitySet="SECTIONs" />
+          </AssociationSet>
+          <AssociationSet Name="FK__STUDENT__Admin_I__239E4DCF" Association="Self.FK__STUDENT__Admin_I__239E4DCF">
+            <End Role="ADMIN" EntitySet="ADMINs" />
+            <End Role="STUDENT" EntitySet="STUDENTs" />
+          </AssociationSet>
+          <AssociationSet Name="FK__SUBJECT__Admin_I__3E52440B" Association="Self.FK__SUBJECT__Admin_I__3E52440B">
+            <End Role="ADMIN" EntitySet="ADMINs" />
+            <End Role="SUBJECT" EntitySet="SUBJECTs" />
+          </AssociationSet>
+          <AssociationSet Name="FK__TEACHER__Admin_I__164452B1" Association="Self.FK__TEACHER__Admin_I__164452B1">
+            <End Role="ADMIN" EntitySet="ADMINs" />
+            <End Role="TEACHER" EntitySet="TEACHERs" />
+          </AssociationSet>
+          <AssociationSet Name="FK__TEACHER_R__Admin__1ED998B2" Association="Self.FK__TEACHER_R__Admin__1ED998B2">
+            <End Role="ADMIN" EntitySet="ADMINs" />
+            <End Role="TEACHER_ROUTINE" EntitySet="TEACHER_ROUTINE" />
+          </AssociationSet>
+          <AssociationSet Name="FK__ATTENDANC__Class__4D94879B" Association="Self.FK__ATTENDANC__Class__4D94879B">
+            <End Role="CLASS" EntitySet="CLASSes" />
+            <End Role="ATTENDANCE" EntitySet="ATTENDANCEs" />
+          </AssociationSet>
+          <AssociationSet Name="FK__ATTENDANC__Secti__4E88ABD4" Association="Self.FK__ATTENDANC__Secti__4E88ABD4">
+            <End Role="SECTION" EntitySet="SECTIONs" />
+            <End Role="ATTENDANCE" EntitySet="ATTENDANCEs" />
+          </AssociationSet>
+          <AssociationSet Name="FK__ATTENDANC__Stude__4CA06362" Association="Self.FK__ATTENDANC__Stude__4CA06362">
+            <End Role="STUDENT" EntitySet="STUDENTs" />
+            <End Role="ATTENDANCE" EntitySet="ATTENDANCEs" />
+          </AssociationSet>
+          <AssociationSet Name="FK__ATTENDANC__Subje__4F7CD00D" Association="Self.FK__ATTENDANC__Subje__4F7CD00D">
+            <End Role="SUBJECT" EntitySet="SUBJECTs" />
+            <End Role="ATTENDANCE" EntitySet="ATTENDANCEs" />
+          </AssociationSet>
+          <AssociationSet Name="FK__ATTENDANC__Teach__5070F446" Association="Self.FK__ATTENDANC__Teach__5070F446">
+            <End Role="TEACHER" EntitySet="TEACHERs" />
+            <End Role="ATTENDANCE" EntitySet="ATTENDANCEs" />
+          </AssociationSet>
+          <AssociationSet Name="FK__CLASSROUT__Class__45F365D3" Association="Self.FK__CLASSROUT__Class__45F365D3">
+            <End Role="CLASS" EntitySet="CLASSes" />
+            <End Role="CLASSROUTINE" EntitySet="CLASSROUTINEs" />
+          </AssociationSet>
+          <AssociationSet Name="FK__RESULT__Class_ID__571DF1D5" Association="Self.FK__RESULT__Class_ID__571DF1D5">
+            <End Role="CLASS" EntitySet="CLASSes" />
+            <End Role="RESULT" EntitySet="RESULTs" />
+          </AssociationSet>
+          <AssociationSet Name="FK__SECTION__Class_I__108B795B" Association="Self.FK__SECTION__Class_I__108B795B">
+            <End Role="CLASS" EntitySet="CLASSes" />
+            <End Role="SECTION" EntitySet="SECTIONs" />
+          </AssociationSet>
+          <AssociationSet Name="FK__STUDENT__Class_I__24927208" Association="Self.FK__STUDENT__Class_I__24927208">
+            <End Role="CLASS" EntitySet="CLASSes" />
+            <End Role="STUDENT" EntitySet="STUDENTs" />
+          </AssociationSet>
+          <AssociationSet Name="FK__SUBJECT__Class_I__3C69FB99" Association="Self.FK__SUBJECT__Class_I__3C69FB99">
+            <End Role="CLASS" EntitySet="CLASSes" />
+            <End Role="SUBJECT" EntitySet="SUBJECTs" />
+          </AssociationSet>
+          <AssociationSet Name="FK__CLASSROUT__Secti__46E78A0C" Association="Self.FK__CLASSROUT__Secti__46E78A0C">
+            <End Role="SECTION" EntitySet="SECTIONs" />
+            <End Role="CLASSROUTINE" EntitySet="CLASSROUTINEs" />
+          </AssociationSet>
+          <AssociationSet Name="FK__GUARDIAN__Studen__2E1BDC42" Association="Self.FK__GUARDIAN__Studen__2E1BDC42">
+            <End Role="STUDENT" EntitySet="STUDENTs" />
+            <End Role="GUARDIAN" EntitySet="GUARDIANs" />
+          </AssociationSet>
+          <AssociationSet Name="FK__GUARDIANR__Guard__37A5467C" Association="Self.FK__GUARDIANR__Guard__37A5467C">
+            <End Role="GUARDIAN" EntitySet="GUARDIANs" />
+            <End Role="GUARDIANREVIEW" EntitySet="GUARDIANREVIEWs" />
+          </AssociationSet>
+          <AssociationSet Name="FK__PAYMENT__Student__32E0915F" Association="Self.FK__PAYMENT__Student__32E0915F">
+            <End Role="STUDENT" EntitySet="STUDENTs" />
+            <End Role="PAYMENT" EntitySet="PAYMENTs" />
+          </AssociationSet>
+          <AssociationSet Name="FK__RESULT__Section___5812160E" Association="Self.FK__RESULT__Section___5812160E">
+            <End Role="SECTION" EntitySet="SECTIONs" />
+            <End Role="RESULT" EntitySet="RESULTs" />
+          </AssociationSet>
+          <AssociationSet Name="FK__RESULT__Student___5629CD9C" Association="Self.FK__RESULT__Student___5629CD9C">
+            <End Role="STUDENT" EntitySet="STUDENTs" />
+            <End Role="RESULT" EntitySet="RESULTs" />
+          </AssociationSet>
+          <AssociationSet Name="FK__RESULT__Subject___59063A47" Association="Self.FK__RESULT__Subject___59063A47">
+            <End Role="SUBJECT" EntitySet="SUBJECTs" />
+            <End Role="RESULT" EntitySet="RESULTs" />
+          </AssociationSet>
+          <AssociationSet Name="FK__RESULT__Teacher___59FA5E80" Association="Self.FK__RESULT__Teacher___59FA5E80">
+            <End Role="TEACHER" EntitySet="TEACHERs" />
+            <End Role="RESULT" EntitySet="RESULTs" />
+          </AssociationSet>
+          <AssociationSet Name="FK__STUDENT__Section__25869641" Association="Self.FK__STUDENT__Section__25869641">
+            <End Role="SECTION" EntitySet="SECTIONs" />
+            <End Role="STUDENT" EntitySet="STUDENTs" />
+          </AssociationSet>
+          <AssociationSet Name="FK__SUBJECT__Teacher__3D5E1FD2" Association="Self.FK__SUBJECT__Teacher__3D5E1FD2">
+            <End Role="TEACHER" EntitySet="TEACHERs" />
+            <End Role="SUBJECT" EntitySet="SUBJECTs" />
+          </AssociationSet>
+          <AssociationSet Name="FK__TEACHER_R__Teach__1DE57479" Association="Self.FK__TEACHER_R__Teach__1DE57479">
+            <End Role="TEACHER" EntitySet="TEACHERs" />
+            <End Role="TEACHER_ROUTINE" EntitySet="TEACHER_ROUTINE" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="OSMSModelStoreContainer" CdmEntityContainer="OSMSEntities">
+          <EntitySetMapping Name="ADMINs">
+            <EntityTypeMapping TypeName="OSMSModel.ADMIN">
+              <MappingFragment StoreEntitySet="ADMIN">
+                <ScalarProperty Name="Admin_ID" ColumnName="Admin_ID" />
+                <ScalarProperty Name="AdminName" ColumnName="AdminName" />
+                <ScalarProperty Name="AdminEmail" ColumnName="AdminEmail" />
+                <ScalarProperty Name="AdminPassword" ColumnName="AdminPassword" />
+                <ScalarProperty Name="AdminContactNumber" ColumnName="AdminContactNumber" />
+                <ScalarProperty Name="AdminAddress" ColumnName="AdminAddress" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="ATTENDANCEs">
+            <EntityTypeMapping TypeName="OSMSModel.ATTENDANCE">
+              <MappingFragment StoreEntitySet="ATTENDANCE">
+                <ScalarProperty Name="Attendance_ID" ColumnName="Attendance_ID" />
+                <ScalarProperty Name="Attendance_Date" ColumnName="Attendance_Date" />
+                <ScalarProperty Name="Attendance_Status" ColumnName="Attendance_Status" />
+                <ScalarProperty Name="Student_ID" ColumnName="Student_ID" />
+                <ScalarProperty Name="Class_ID" ColumnName="Class_ID" />
+                <ScalarProperty Name="Section_ID" ColumnName="Section_ID" />
+                <ScalarProperty Name="Subject_ID" ColumnName="Subject_ID" />
+                <ScalarProperty Name="Teacher_ID" ColumnName="Teacher_ID" />
+                <ScalarProperty Name="Admin_ID" ColumnName="Admin_ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="CLASSes">
+            <EntityTypeMapping TypeName="OSMSModel.CLASS">
+              <MappingFragment StoreEntitySet="CLASS">
+                <ScalarProperty Name="Class_ID" ColumnName="Class_ID" />
+                <ScalarProperty Name="ClassName" ColumnName="ClassName" />
+                <ScalarProperty Name="TotalSectons" ColumnName="TotalSectons" />
+                <ScalarProperty Name="TotalStudents" ColumnName="TotalStudents" />
+                <ScalarProperty Name="Admin_ID" ColumnName="Admin_ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="CLASSROUTINEs">
+            <EntityTypeMapping TypeName="OSMSModel.CLASSROUTINE">
+              <MappingFragment StoreEntitySet="CLASSROUTINE">
+                <ScalarProperty Name="ClassRoutine_ID" ColumnName="ClassRoutine_ID" />
+                <ScalarProperty Name="ClassRoutineDirectory" ColumnName="ClassRoutineDirectory" />
+                <ScalarProperty Name="Class_ID" ColumnName="Class_ID" />
+                <ScalarProperty Name="Section_ID" ColumnName="Section_ID" />
+                <ScalarProperty Name="Admin_ID" ColumnName="Admin_ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="EVENTs">
+            <EntityTypeMapping TypeName="OSMSModel.EVENT">
+              <MappingFragment StoreEntitySet="EVENT">
+                <ScalarProperty Name="Event_ID" ColumnName="Event_ID" />
+                <ScalarProperty Name="Title" ColumnName="Title" />
+                <ScalarProperty Name="Description" ColumnName="Description" />
+                <ScalarProperty Name="AnnouncementDate" ColumnName="AnnouncementDate" />
+                <ScalarProperty Name="IssuedBY" ColumnName="IssuedBY" />
+                <ScalarProperty Name="FileDirectory" ColumnName="FileDirectory" />
+                <ScalarProperty Name="ImageDirectory" ColumnName="ImageDirectory" />
+                <ScalarProperty Name="Admin_ID" ColumnName="Admin_ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="GUARDIANs">
+            <EntityTypeMapping TypeName="OSMSModel.GUARDIAN">
+              <MappingFragment StoreEntitySet="GUARDIAN">
+                <ScalarProperty Name="Guardian_ID" ColumnName="Guardian_ID" />
+                <ScalarProperty Name="GuardianName" ColumnName="GuardianName" />
+                <ScalarProperty Name="GuardianEmail" ColumnName="GuardianEmail" />
+                <ScalarProperty Name="GuardianPassword" ColumnName="GuardianPassword" />
+                <ScalarProperty Name="GuardianContactNumber" ColumnName="GuardianContactNumber" />
+                <ScalarProperty Name="GuardianAddress" ColumnName="GuardianAddress" />
+                <ScalarProperty Name="Admin_ID" ColumnName="Admin_ID" />
+                <ScalarProperty Name="Student_ID" ColumnName="Student_ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="GUARDIANREVIEWs">
+            <EntityTypeMapping TypeName="OSMSModel.GUARDIANREVIEW">
+              <MappingFragment StoreEntitySet="GUARDIANREVIEW">
+                <ScalarProperty Name="Review_ID" ColumnName="Review_ID" />
+                <ScalarProperty Name="ReviewDescription" ColumnName="ReviewDescription" />
+                <ScalarProperty Name="Guardian_ID" ColumnName="Guardian_ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="PAYMENTs">
+            <EntityTypeMapping TypeName="OSMSModel.PAYMENT">
+              <MappingFragment StoreEntitySet="PAYMENT">
+                <ScalarProperty Name="Payment_ID" ColumnName="Payment_ID" />
+                <ScalarProperty Name="PaymentAmount" ColumnName="PaymentAmount" />
+                <ScalarProperty Name="PaymentDate" ColumnName="PaymentDate" />
+                <ScalarProperty Name="PaymentMonth" ColumnName="PaymentMonth" />
+                <ScalarProperty Name="Student_ID" ColumnName="Student_ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="RESULTs">
+            <EntityTypeMapping TypeName="OSMSModel.RESULT">
+              <MappingFragment StoreEntitySet="RESULT">
+                <ScalarProperty Name="Result_ID" ColumnName="Result_ID" />
+                <ScalarProperty Name="ExamDate" ColumnName="ExamDate" />
+                <ScalarProperty Name="MarksObtained" ColumnName="MarksObtained" />
+                <ScalarProperty Name="Grade" ColumnName="Grade" />
+                <ScalarProperty Name="Student_ID" ColumnName="Student_ID" />
+                <ScalarProperty Name="Class_ID" ColumnName="Class_ID" />
+                <ScalarProperty Name="Section_ID" ColumnName="Section_ID" />
+                <ScalarProperty Name="Subject_ID" ColumnName="Subject_ID" />
+                <ScalarProperty Name="Teacher_ID" ColumnName="Teacher_ID" />
+                <ScalarProperty Name="Admin_ID" ColumnName="Admin_ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="SECTIONs">
+            <EntityTypeMapping TypeName="OSMSModel.SECTION">
+              <MappingFragment StoreEntitySet="SECTION">
+                <ScalarProperty Name="Section_ID" ColumnName="Section_ID" />
+                <ScalarProperty Name="SectionName" ColumnName="SectionName" />
+                <ScalarProperty Name="TotalStudents" ColumnName="TotalStudents" />
+                <ScalarProperty Name="Admin_ID" ColumnName="Admin_ID" />
+                <ScalarProperty Name="Class_ID" ColumnName="Class_ID" />
+                <ScalarProperty Name="SectionGroup" ColumnName="SectionGroup" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="STUDENTs">
+            <EntityTypeMapping TypeName="OSMSModel.STUDENT">
+              <MappingFragment StoreEntitySet="STUDENT">
+                <ScalarProperty Name="Student_ID" ColumnName="Student_ID" />
+                <ScalarProperty Name="StudentName" ColumnName="StudentName" />
+                <ScalarProperty Name="StudentEmail" ColumnName="StudentEmail" />
+                <ScalarProperty Name="StudentPassword" ColumnName="StudentPassword" />
+                <ScalarProperty Name="StudentContactNumber" ColumnName="StudentContactNumber" />
+                <ScalarProperty Name="StudentAddress" ColumnName="StudentAddress" />
+                <ScalarProperty Name="Admin_ID" ColumnName="Admin_ID" />
+                <ScalarProperty Name="Class_ID" ColumnName="Class_ID" />
+                <ScalarProperty Name="Section_ID" ColumnName="Section_ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="SUBJECTs">
+            <EntityTypeMapping TypeName="OSMSModel.SUBJECT">
+              <MappingFragment StoreEntitySet="SUBJECT">
+                <ScalarProperty Name="Subject_ID" ColumnName="Subject_ID" />
+                <ScalarProperty Name="SubjectName" ColumnName="SubjectName" />
+                <ScalarProperty Name="Class_ID" ColumnName="Class_ID" />
+                <ScalarProperty Name="Teacher_ID" ColumnName="Teacher_ID" />
+                <ScalarProperty Name="Admin_ID" ColumnName="Admin_ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="TEACHERs">
+            <EntityTypeMapping TypeName="OSMSModel.TEACHER">
+              <MappingFragment StoreEntitySet="TEACHER">
+                <ScalarProperty Name="Teacher_ID" ColumnName="Teacher_ID" />
+                <ScalarProperty Name="TeacherName" ColumnName="TeacherName" />
+                <ScalarProperty Name="TeacherEmail" ColumnName="TeacherEmail" />
+                <ScalarProperty Name="TeacherPassword" ColumnName="TeacherPassword" />
+                <ScalarProperty Name="TeacherContactNumber" ColumnName="TeacherContactNumber" />
+                <ScalarProperty Name="TeacherAddress" ColumnName="TeacherAddress" />
+                <ScalarProperty Name="Admin_ID" ColumnName="Admin_ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="TEACHER_ROUTINE">
+            <EntityTypeMapping TypeName="OSMSModel.TEACHER_ROUTINE">
+              <MappingFragment StoreEntitySet="TEACHER_ROUTINE">
+                <ScalarProperty Name="TeacherRoutine_ID" ColumnName="TeacherRoutine_ID" />
+                <ScalarProperty Name="TeacherRoutineDirectory" ColumnName="TeacherRoutineDirectory" />
+                <ScalarProperty Name="Teacher_ID" ColumnName="Teacher_ID" />
+                <ScalarProperty Name="Admin_ID" ColumnName="Admin_ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

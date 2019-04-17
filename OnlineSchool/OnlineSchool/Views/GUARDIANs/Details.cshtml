@@ -1,0 +1,74 @@
+﻿@model OnlineSchool.Models.GUARDIAN
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>GUARDIAN</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.GuardianName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.GuardianName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.GuardianEmail)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.GuardianEmail)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.GuardianPassword)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.GuardianPassword)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.GuardianContactNumber)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.GuardianContactNumber)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.GuardianAddress)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.GuardianAddress)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ADMIN.AdminName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ADMIN.AdminName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.STUDENT.StudentName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.STUDENT.StudentName)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Guardian_ID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

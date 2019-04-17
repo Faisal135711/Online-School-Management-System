@@ -1,0 +1,57 @@
+﻿@model IEnumerable<OnlineSchool.Models.CLASS>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Class Table</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Class_ID)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ClassName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TotalSectons)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TotalStudents)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ADMIN.AdminName)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Class_ID)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ClassName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.TotalSectons)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.TotalStudents)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ADMIN.AdminName)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id = item.Class_ID }) |
+            @Html.ActionLink("Details", "Details", new { id = item.Class_ID }) |
+            @Html.ActionLink("Delete", "Delete", new { id = item.Class_ID })
+        </td>
+    </tr>
+}
+
+</table>

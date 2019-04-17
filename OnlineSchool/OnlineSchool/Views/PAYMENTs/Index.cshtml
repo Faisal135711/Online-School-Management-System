@@ -1,0 +1,51 @@
+﻿@model IEnumerable<OnlineSchool.Models.PAYMENT>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Payment Table</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.PaymentAmount)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.PaymentDate)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.PaymentMonth)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.STUDENT.StudentName)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.PaymentAmount)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.PaymentDate)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.PaymentMonth)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.STUDENT.StudentName)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.Payment_ID }) |
+            @Html.ActionLink("Details", "Details", new { id=item.Payment_ID }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.Payment_ID })
+        </td>
+    </tr>
+}
+
+</table>

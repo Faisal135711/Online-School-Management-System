@@ -1,0 +1,57 @@
+﻿@model IEnumerable<OnlineSchool.Models.SECTION>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Section Table</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.SectionName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TotalStudents)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.SectionGroup)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ADMIN.AdminName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CLASS.ClassName)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.SectionName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.TotalStudents)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.SectionGroup)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ADMIN.AdminName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CLASS.ClassName)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.Section_ID }) |
+            @Html.ActionLink("Details", "Details", new { id=item.Section_ID }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.Section_ID })
+        </td>
+    </tr>
+}
+
+</table>

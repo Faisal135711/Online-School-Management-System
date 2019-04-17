@@ -1,0 +1,50 @@
+﻿@model OnlineSchool.Models.CLASS
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>CLASS</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.ClassName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ClassName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TotalSectons)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TotalSectons)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TotalStudents)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TotalStudents)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ADMIN.AdminName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ADMIN.AdminName)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Class_ID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

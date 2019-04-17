@@ -1,0 +1,65 @@
+﻿@model IEnumerable<OnlineSchool.Models.ADMIN>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Admin Table</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Admin_ID)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.AdminName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.AdminEmail)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.AdminPassword)
+        </th>
+
+        <th>
+            @Html.DisplayNameFor(model => model.AdminContactNumber)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.AdminAddress)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Admin_ID)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.AdminName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.AdminEmail)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.AdminPassword)
+        </td>
+
+        <td>
+            @Html.DisplayFor(modelItem => item.AdminContactNumber)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.AdminAddress)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id = item.Admin_ID }) |
+            @Html.ActionLink("Details", "Details", new { id = item.Admin_ID }) |
+            @Html.ActionLink("Delete", "Delete", new { id = item.Admin_ID })
+        </td>
+    </tr>
+}
+
+</table>

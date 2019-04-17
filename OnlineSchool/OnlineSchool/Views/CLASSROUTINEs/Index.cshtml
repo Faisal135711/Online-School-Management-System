@@ -1,0 +1,51 @@
+﻿@model IEnumerable<OnlineSchool.Models.CLASSROUTINE>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Class Routine Table</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.ClassRoutineDirectory)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ADMIN.AdminName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CLASS.ClassName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.SECTION.SectionName)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.ClassRoutineDirectory)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ADMIN.AdminName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CLASS.ClassName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.SECTION.SectionName)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.ClassRoutine_ID }) |
+            @Html.ActionLink("Details", "Details", new { id=item.ClassRoutine_ID }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.ClassRoutine_ID })
+        </td>
+    </tr>
+}
+
+</table>

@@ -1,0 +1,342 @@
+C:\Users\Acer\source\repos\OnlineSchool\OnlineSchool\bin\OnlineSchool.dll.config
+C:\Users\Acer\source\repos\OnlineSchool\OnlineSchool\bin\OnlineSchool.dll
+C:\Users\Acer\source\repos\OnlineSchool\OnlineSchool\bin\OnlineSchool.pdb
+C:\Users\Acer\source\repos\OnlineSchool\OnlineSchool\bin\roslyn\csc.exe
+C:\Users\Acer\source\repos\OnlineSchool\OnlineSchool\bin\roslyn\csc.exe.config
+C:\Users\Acer\source\repos\OnlineSchool\OnlineSchool\bin\roslyn\csc.rsp
+C:\Users\Acer\source\repos\OnlineSchool\OnlineSchool\bin\roslyn\csi.exe
+C:\Users\Acer\source\repos\OnlineSchool\OnlineSchool\bin\roslyn\csi.exe.config
+C:\Users\Acer\source\repos\OnlineSchool\OnlineSchool\bin\roslyn\csi.rsp
+C:\Users\Acer\source\repos\OnlineSchool\OnlineSchool\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Acer\source\repos\OnlineSchool\OnlineSchool\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Acer\source\repos\OnlineSchool\OnlineSchool\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\Acer\source\repos\OnlineSchool\OnlineSchool\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Acer\source\repos\OnlineSchool\OnlineSchool\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\Acer\source\repos\OnlineSchool\OnlineSchool\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Acer\source\repos\OnlineSchool\OnlineSchool\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Acer\source\repos\OnlineSchool\OnlineSchool\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\Acer\source\repos\OnlineSchool\OnlineSchool\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\Acer\source\repos\OnlineSchool\OnlineSchool\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\Acer\source\repos\OnlineSchool\OnlineSchool\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Acer\source\repos\OnlineSchool\OnlineSchool\bin\roslyn\System.AppContext.dll
+C:\Users\Acer\source\repos\OnlineSchool\OnlineSchool\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Acer\source\repos\OnlineSchool\OnlineSchool\bin\roslyn\System.Console.dll
+C:\Users\Acer\source\repos\OnlineSchool\OnlineSchool\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\Acer\source\repos\OnlineSchool\OnlineSchool\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\Acer\source\repos\OnlineSchool\OnlineSchool\bin\roslyn\System.IO.Compression.dll
+C:\Users\Acer\source\repos\OnlineSchool\OnlineSchool\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\Acer\source\repos\OnlineSchool\OnlineSchool\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\Acer\source\repos\OnlineSchool\OnlineSchool\bin\roslyn\System.IO.Pipes.AccessControl.dll
+C:\Users\Acer\source\repos\OnlineSchool\OnlineSchool\bin\roslyn\System.IO.Pipes.dll
+C:\Users\Acer\source\repos\OnlineSchool\OnlineSchool\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Acer\source\repos\OnlineSchool\OnlineSchool\bin\roslyn\System.Security.AccessControl.dll
+C:\Users\Acer\source\repos\OnlineSchool\OnlineSchool\bin\roslyn\System.Security.Claims.dll
+C:\Users\Acer\source\repos\OnlineSchool\OnlineSchool\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\Acer\source\repos\OnlineSchool\OnlineSchool\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\Acer\source\repos\OnlineSchool\OnlineSchool\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\Acer\source\repos\OnlineSchool\OnlineSchool\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\Acer\source\repos\OnlineSchool\OnlineSchool\bin\roslyn\System.Security.Principal.Windows.dll
+C:\Users\Acer\source\repos\OnlineSchool\OnlineSchool\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\Acer\source\repos\OnlineSchool\OnlineSchool\bin\roslyn\System.ValueTuple.dll
+C:\Users\Acer\source\repos\OnlineSchool\OnlineSchool\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\Acer\source\repos\OnlineSchool\OnlineSchool\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\Acer\source\repos\OnlineSchool\OnlineSchool\bin\roslyn\System.Xml.XPath.dll
+C:\Users\Acer\source\repos\OnlineSchool\OnlineSchool\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\Acer\source\repos\OnlineSchool\OnlineSchool\bin\roslyn\vbc.exe
+C:\Users\Acer\source\repos\OnlineSchool\OnlineSchool\bin\roslyn\vbc.exe.config
+C:\Users\Acer\source\repos\OnlineSchool\OnlineSchool\bin\roslyn\vbc.rsp
+C:\Users\Acer\source\repos\OnlineSchool\OnlineSchool\bin\roslyn\VBCSCompiler.exe
+C:\Users\Acer\source\repos\OnlineSchool\OnlineSchool\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Acer\source\repos\OnlineSchool\OnlineSchool\bin\Antlr3.Runtime.dll
+C:\Users\Acer\source\repos\OnlineSchool\OnlineSchool\bin\EntityFramework.dll
+C:\Users\Acer\source\repos\OnlineSchool\OnlineSchool\bin\EntityFramework.SqlServer.dll
+C:\Users\Acer\source\repos\OnlineSchool\OnlineSchool\bin\Microsoft.AspNet.TelemetryCorrelation.dll
+C:\Users\Acer\source\repos\OnlineSchool\OnlineSchool\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Acer\source\repos\OnlineSchool\OnlineSchool\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Acer\source\repos\OnlineSchool\OnlineSchool\bin\Newtonsoft.Json.dll
+C:\Users\Acer\source\repos\OnlineSchool\OnlineSchool\bin\System.Diagnostics.DiagnosticSource.dll
+C:\Users\Acer\source\repos\OnlineSchool\OnlineSchool\bin\System.Web.Helpers.dll
+C:\Users\Acer\source\repos\OnlineSchool\OnlineSchool\bin\System.Web.Mvc.dll
+C:\Users\Acer\source\repos\OnlineSchool\OnlineSchool\bin\System.Web.Optimization.dll
+C:\Users\Acer\source\repos\OnlineSchool\OnlineSchool\bin\System.Web.Razor.dll
+C:\Users\Acer\source\repos\OnlineSchool\OnlineSchool\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Acer\source\repos\OnlineSchool\OnlineSchool\bin\System.Web.WebPages.dll
+C:\Users\Acer\source\repos\OnlineSchool\OnlineSchool\bin\System.Web.WebPages.Razor.dll
+C:\Users\Acer\source\repos\OnlineSchool\OnlineSchool\bin\WebGrease.dll
+C:\Users\Acer\source\repos\OnlineSchool\OnlineSchool\bin\EntityFramework.xml
+C:\Users\Acer\source\repos\OnlineSchool\OnlineSchool\bin\EntityFramework.SqlServer.xml
+C:\Users\Acer\source\repos\OnlineSchool\OnlineSchool\bin\System.Web.Helpers.xml
+C:\Users\Acer\source\repos\OnlineSchool\OnlineSchool\bin\System.Web.Mvc.xml
+C:\Users\Acer\source\repos\OnlineSchool\OnlineSchool\bin\System.Web.Optimization.xml
+C:\Users\Acer\source\repos\OnlineSchool\OnlineSchool\bin\System.Web.Razor.xml
+C:\Users\Acer\source\repos\OnlineSchool\OnlineSchool\bin\System.Web.WebPages.xml
+C:\Users\Acer\source\repos\OnlineSchool\OnlineSchool\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Acer\source\repos\OnlineSchool\OnlineSchool\bin\System.Web.WebPages.Razor.xml
+C:\Users\Acer\source\repos\OnlineSchool\OnlineSchool\bin\Newtonsoft.Json.xml
+C:\Users\Acer\source\repos\OnlineSchool\OnlineSchool\bin\Antlr3.Runtime.pdb
+C:\Users\Acer\source\repos\OnlineSchool\OnlineSchool\bin\System.Diagnostics.DiagnosticSource.xml
+C:\Users\Acer\source\repos\OnlineSchool\OnlineSchool\bin\Microsoft.AspNet.TelemetryCorrelation.xml
+C:\Users\Acer\source\repos\OnlineSchool\OnlineSchool\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Acer\source\repos\OnlineSchool\OnlineSchool\obj\Debug\OnlineSchool.csproj.CoreCompileInputs.cache
+C:\Users\Acer\source\repos\OnlineSchool\OnlineSchool\obj\Debug\OnlineSchool.csproj.CopyComplete
+C:\Users\Acer\source\repos\OnlineSchool\OnlineSchool\obj\Debug\OnlineSchool.dll
+C:\Users\Acer\source\repos\OnlineSchool\OnlineSchool\obj\Debug\OnlineSchool.pdb
+C:\Users\Acer\source\repos\OnlineSchool\OnlineSchool\obj\Debug\OnlineSchool.csprojAssemblyReference.cache
+E:\3.2\ISD LAB\ONIM's FIRST UPDATE\OnlineSchool\OnlineSchool\bin\OnlineSchool.dll.config
+E:\3.2\ISD LAB\ONIM's FIRST UPDATE\OnlineSchool\OnlineSchool\bin\OnlineSchool.dll
+E:\3.2\ISD LAB\ONIM's FIRST UPDATE\OnlineSchool\OnlineSchool\bin\OnlineSchool.pdb
+E:\3.2\ISD LAB\ONIM's FIRST UPDATE\OnlineSchool\OnlineSchool\bin\roslyn\csc.exe
+E:\3.2\ISD LAB\ONIM's FIRST UPDATE\OnlineSchool\OnlineSchool\bin\roslyn\csc.exe.config
+E:\3.2\ISD LAB\ONIM's FIRST UPDATE\OnlineSchool\OnlineSchool\bin\roslyn\csc.rsp
+E:\3.2\ISD LAB\ONIM's FIRST UPDATE\OnlineSchool\OnlineSchool\bin\roslyn\csi.exe
+E:\3.2\ISD LAB\ONIM's FIRST UPDATE\OnlineSchool\OnlineSchool\bin\roslyn\csi.exe.config
+E:\3.2\ISD LAB\ONIM's FIRST UPDATE\OnlineSchool\OnlineSchool\bin\roslyn\csi.rsp
+E:\3.2\ISD LAB\ONIM's FIRST UPDATE\OnlineSchool\OnlineSchool\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+E:\3.2\ISD LAB\ONIM's FIRST UPDATE\OnlineSchool\OnlineSchool\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+E:\3.2\ISD LAB\ONIM's FIRST UPDATE\OnlineSchool\OnlineSchool\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+E:\3.2\ISD LAB\ONIM's FIRST UPDATE\OnlineSchool\OnlineSchool\bin\roslyn\Microsoft.CodeAnalysis.dll
+E:\3.2\ISD LAB\ONIM's FIRST UPDATE\OnlineSchool\OnlineSchool\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+E:\3.2\ISD LAB\ONIM's FIRST UPDATE\OnlineSchool\OnlineSchool\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+E:\3.2\ISD LAB\ONIM's FIRST UPDATE\OnlineSchool\OnlineSchool\bin\roslyn\Microsoft.CSharp.Core.targets
+E:\3.2\ISD LAB\ONIM's FIRST UPDATE\OnlineSchool\OnlineSchool\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+E:\3.2\ISD LAB\ONIM's FIRST UPDATE\OnlineSchool\OnlineSchool\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+E:\3.2\ISD LAB\ONIM's FIRST UPDATE\OnlineSchool\OnlineSchool\bin\roslyn\Microsoft.Managed.Core.targets
+E:\3.2\ISD LAB\ONIM's FIRST UPDATE\OnlineSchool\OnlineSchool\bin\roslyn\Microsoft.VisualBasic.Core.targets
+E:\3.2\ISD LAB\ONIM's FIRST UPDATE\OnlineSchool\OnlineSchool\bin\roslyn\System.AppContext.dll
+E:\3.2\ISD LAB\ONIM's FIRST UPDATE\OnlineSchool\OnlineSchool\bin\roslyn\System.Collections.Immutable.dll
+E:\3.2\ISD LAB\ONIM's FIRST UPDATE\OnlineSchool\OnlineSchool\bin\roslyn\System.Console.dll
+E:\3.2\ISD LAB\ONIM's FIRST UPDATE\OnlineSchool\OnlineSchool\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+E:\3.2\ISD LAB\ONIM's FIRST UPDATE\OnlineSchool\OnlineSchool\bin\roslyn\System.Diagnostics.StackTrace.dll
+E:\3.2\ISD LAB\ONIM's FIRST UPDATE\OnlineSchool\OnlineSchool\bin\roslyn\System.IO.Compression.dll
+E:\3.2\ISD LAB\ONIM's FIRST UPDATE\OnlineSchool\OnlineSchool\bin\roslyn\System.IO.FileSystem.dll
+E:\3.2\ISD LAB\ONIM's FIRST UPDATE\OnlineSchool\OnlineSchool\bin\roslyn\System.IO.FileSystem.Primitives.dll
+E:\3.2\ISD LAB\ONIM's FIRST UPDATE\OnlineSchool\OnlineSchool\bin\roslyn\System.IO.Pipes.AccessControl.dll
+E:\3.2\ISD LAB\ONIM's FIRST UPDATE\OnlineSchool\OnlineSchool\bin\roslyn\System.IO.Pipes.dll
+E:\3.2\ISD LAB\ONIM's FIRST UPDATE\OnlineSchool\OnlineSchool\bin\roslyn\System.Reflection.Metadata.dll
+E:\3.2\ISD LAB\ONIM's FIRST UPDATE\OnlineSchool\OnlineSchool\bin\roslyn\System.Security.AccessControl.dll
+E:\3.2\ISD LAB\ONIM's FIRST UPDATE\OnlineSchool\OnlineSchool\bin\roslyn\System.Security.Claims.dll
+E:\3.2\ISD LAB\ONIM's FIRST UPDATE\OnlineSchool\OnlineSchool\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+E:\3.2\ISD LAB\ONIM's FIRST UPDATE\OnlineSchool\OnlineSchool\bin\roslyn\System.Security.Cryptography.Encoding.dll
+E:\3.2\ISD LAB\ONIM's FIRST UPDATE\OnlineSchool\OnlineSchool\bin\roslyn\System.Security.Cryptography.Primitives.dll
+E:\3.2\ISD LAB\ONIM's FIRST UPDATE\OnlineSchool\OnlineSchool\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+E:\3.2\ISD LAB\ONIM's FIRST UPDATE\OnlineSchool\OnlineSchool\bin\roslyn\System.Security.Principal.Windows.dll
+E:\3.2\ISD LAB\ONIM's FIRST UPDATE\OnlineSchool\OnlineSchool\bin\roslyn\System.Text.Encoding.CodePages.dll
+E:\3.2\ISD LAB\ONIM's FIRST UPDATE\OnlineSchool\OnlineSchool\bin\roslyn\System.ValueTuple.dll
+E:\3.2\ISD LAB\ONIM's FIRST UPDATE\OnlineSchool\OnlineSchool\bin\roslyn\System.Xml.ReaderWriter.dll
+E:\3.2\ISD LAB\ONIM's FIRST UPDATE\OnlineSchool\OnlineSchool\bin\roslyn\System.Xml.XmlDocument.dll
+E:\3.2\ISD LAB\ONIM's FIRST UPDATE\OnlineSchool\OnlineSchool\bin\roslyn\System.Xml.XPath.dll
+E:\3.2\ISD LAB\ONIM's FIRST UPDATE\OnlineSchool\OnlineSchool\bin\roslyn\System.Xml.XPath.XDocument.dll
+E:\3.2\ISD LAB\ONIM's FIRST UPDATE\OnlineSchool\OnlineSchool\bin\roslyn\vbc.exe
+E:\3.2\ISD LAB\ONIM's FIRST UPDATE\OnlineSchool\OnlineSchool\bin\roslyn\vbc.exe.config
+E:\3.2\ISD LAB\ONIM's FIRST UPDATE\OnlineSchool\OnlineSchool\bin\roslyn\vbc.rsp
+E:\3.2\ISD LAB\ONIM's FIRST UPDATE\OnlineSchool\OnlineSchool\bin\roslyn\VBCSCompiler.exe
+E:\3.2\ISD LAB\ONIM's FIRST UPDATE\OnlineSchool\OnlineSchool\bin\roslyn\VBCSCompiler.exe.config
+E:\3.2\ISD LAB\ONIM's FIRST UPDATE\OnlineSchool\OnlineSchool\bin\Antlr3.Runtime.dll
+E:\3.2\ISD LAB\ONIM's FIRST UPDATE\OnlineSchool\OnlineSchool\bin\EntityFramework.dll
+E:\3.2\ISD LAB\ONIM's FIRST UPDATE\OnlineSchool\OnlineSchool\bin\EntityFramework.SqlServer.dll
+E:\3.2\ISD LAB\ONIM's FIRST UPDATE\OnlineSchool\OnlineSchool\bin\Microsoft.AspNet.TelemetryCorrelation.dll
+E:\3.2\ISD LAB\ONIM's FIRST UPDATE\OnlineSchool\OnlineSchool\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+E:\3.2\ISD LAB\ONIM's FIRST UPDATE\OnlineSchool\OnlineSchool\bin\Microsoft.Web.Infrastructure.dll
+E:\3.2\ISD LAB\ONIM's FIRST UPDATE\OnlineSchool\OnlineSchool\bin\Newtonsoft.Json.dll
+E:\3.2\ISD LAB\ONIM's FIRST UPDATE\OnlineSchool\OnlineSchool\bin\System.Diagnostics.DiagnosticSource.dll
+E:\3.2\ISD LAB\ONIM's FIRST UPDATE\OnlineSchool\OnlineSchool\bin\System.Web.Helpers.dll
+E:\3.2\ISD LAB\ONIM's FIRST UPDATE\OnlineSchool\OnlineSchool\bin\System.Web.Mvc.dll
+E:\3.2\ISD LAB\ONIM's FIRST UPDATE\OnlineSchool\OnlineSchool\bin\System.Web.Optimization.dll
+E:\3.2\ISD LAB\ONIM's FIRST UPDATE\OnlineSchool\OnlineSchool\bin\System.Web.Razor.dll
+E:\3.2\ISD LAB\ONIM's FIRST UPDATE\OnlineSchool\OnlineSchool\bin\System.Web.WebPages.Deployment.dll
+E:\3.2\ISD LAB\ONIM's FIRST UPDATE\OnlineSchool\OnlineSchool\bin\System.Web.WebPages.dll
+E:\3.2\ISD LAB\ONIM's FIRST UPDATE\OnlineSchool\OnlineSchool\bin\System.Web.WebPages.Razor.dll
+E:\3.2\ISD LAB\ONIM's FIRST UPDATE\OnlineSchool\OnlineSchool\bin\WebGrease.dll
+E:\3.2\ISD LAB\ONIM's FIRST UPDATE\OnlineSchool\OnlineSchool\bin\EntityFramework.xml
+E:\3.2\ISD LAB\ONIM's FIRST UPDATE\OnlineSchool\OnlineSchool\bin\EntityFramework.SqlServer.xml
+E:\3.2\ISD LAB\ONIM's FIRST UPDATE\OnlineSchool\OnlineSchool\bin\System.Web.Helpers.xml
+E:\3.2\ISD LAB\ONIM's FIRST UPDATE\OnlineSchool\OnlineSchool\bin\System.Web.Mvc.xml
+E:\3.2\ISD LAB\ONIM's FIRST UPDATE\OnlineSchool\OnlineSchool\bin\System.Web.Optimization.xml
+E:\3.2\ISD LAB\ONIM's FIRST UPDATE\OnlineSchool\OnlineSchool\bin\System.Web.Razor.xml
+E:\3.2\ISD LAB\ONIM's FIRST UPDATE\OnlineSchool\OnlineSchool\bin\System.Web.WebPages.xml
+E:\3.2\ISD LAB\ONIM's FIRST UPDATE\OnlineSchool\OnlineSchool\bin\System.Web.WebPages.Deployment.xml
+E:\3.2\ISD LAB\ONIM's FIRST UPDATE\OnlineSchool\OnlineSchool\bin\System.Web.WebPages.Razor.xml
+E:\3.2\ISD LAB\ONIM's FIRST UPDATE\OnlineSchool\OnlineSchool\bin\Newtonsoft.Json.xml
+E:\3.2\ISD LAB\ONIM's FIRST UPDATE\OnlineSchool\OnlineSchool\bin\Antlr3.Runtime.pdb
+E:\3.2\ISD LAB\ONIM's FIRST UPDATE\OnlineSchool\OnlineSchool\bin\System.Diagnostics.DiagnosticSource.xml
+E:\3.2\ISD LAB\ONIM's FIRST UPDATE\OnlineSchool\OnlineSchool\bin\Microsoft.AspNet.TelemetryCorrelation.xml
+E:\3.2\ISD LAB\ONIM's FIRST UPDATE\OnlineSchool\OnlineSchool\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+E:\3.2\ISD LAB\ONIM's FIRST UPDATE\OnlineSchool\OnlineSchool\obj\Debug\OnlineSchool.csproj.CoreCompileInputs.cache
+E:\3.2\ISD LAB\ONIM's FIRST UPDATE\OnlineSchool\OnlineSchool\obj\Debug\OnlineSchool.csproj.CopyComplete
+E:\3.2\ISD LAB\ONIM's FIRST UPDATE\OnlineSchool\OnlineSchool\obj\Debug\OnlineSchool.dll
+E:\3.2\ISD LAB\ONIM's FIRST UPDATE\OnlineSchool\OnlineSchool\obj\Debug\OnlineSchool.pdb
+E:\3.2\ISD LAB\ONIM's FIRST UPDATE\OnlineSchool\OnlineSchool\bin\Dapper.dll
+E:\3.2\ISD LAB\ONIM's FIRST UPDATE\OnlineSchool\OnlineSchool\bin\Dapper.xml
+E:\3.2\ISD LAB\ONIM's FIRST UPDATE\OnlineSchool\OnlineSchool\obj\Debug\OnlineSchool.csprojAssemblyReference.cache
+C:\Users\user\Downloads\schoolmanagement\ONIM's FIRST UPDATE\OnlineSchool\OnlineSchool\bin\OnlineSchool.dll.config
+C:\Users\user\Downloads\schoolmanagement\ONIM's FIRST UPDATE\OnlineSchool\OnlineSchool\bin\OnlineSchool.dll
+C:\Users\user\Downloads\schoolmanagement\ONIM's FIRST UPDATE\OnlineSchool\OnlineSchool\bin\OnlineSchool.pdb
+C:\Users\user\Downloads\schoolmanagement\ONIM's FIRST UPDATE\OnlineSchool\OnlineSchool\bin\roslyn\csc.exe
+C:\Users\user\Downloads\schoolmanagement\ONIM's FIRST UPDATE\OnlineSchool\OnlineSchool\bin\roslyn\csc.exe.config
+C:\Users\user\Downloads\schoolmanagement\ONIM's FIRST UPDATE\OnlineSchool\OnlineSchool\bin\roslyn\csc.rsp
+C:\Users\user\Downloads\schoolmanagement\ONIM's FIRST UPDATE\OnlineSchool\OnlineSchool\bin\roslyn\csi.exe
+C:\Users\user\Downloads\schoolmanagement\ONIM's FIRST UPDATE\OnlineSchool\OnlineSchool\bin\roslyn\csi.exe.config
+C:\Users\user\Downloads\schoolmanagement\ONIM's FIRST UPDATE\OnlineSchool\OnlineSchool\bin\roslyn\csi.rsp
+C:\Users\user\Downloads\schoolmanagement\ONIM's FIRST UPDATE\OnlineSchool\OnlineSchool\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\user\Downloads\schoolmanagement\ONIM's FIRST UPDATE\OnlineSchool\OnlineSchool\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\user\Downloads\schoolmanagement\ONIM's FIRST UPDATE\OnlineSchool\OnlineSchool\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\user\Downloads\schoolmanagement\ONIM's FIRST UPDATE\OnlineSchool\OnlineSchool\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\user\Downloads\schoolmanagement\ONIM's FIRST UPDATE\OnlineSchool\OnlineSchool\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\user\Downloads\schoolmanagement\ONIM's FIRST UPDATE\OnlineSchool\OnlineSchool\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\user\Downloads\schoolmanagement\ONIM's FIRST UPDATE\OnlineSchool\OnlineSchool\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\user\Downloads\schoolmanagement\ONIM's FIRST UPDATE\OnlineSchool\OnlineSchool\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\user\Downloads\schoolmanagement\ONIM's FIRST UPDATE\OnlineSchool\OnlineSchool\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\user\Downloads\schoolmanagement\ONIM's FIRST UPDATE\OnlineSchool\OnlineSchool\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\user\Downloads\schoolmanagement\ONIM's FIRST UPDATE\OnlineSchool\OnlineSchool\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\user\Downloads\schoolmanagement\ONIM's FIRST UPDATE\OnlineSchool\OnlineSchool\bin\roslyn\System.AppContext.dll
+C:\Users\user\Downloads\schoolmanagement\ONIM's FIRST UPDATE\OnlineSchool\OnlineSchool\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\user\Downloads\schoolmanagement\ONIM's FIRST UPDATE\OnlineSchool\OnlineSchool\bin\roslyn\System.Console.dll
+C:\Users\user\Downloads\schoolmanagement\ONIM's FIRST UPDATE\OnlineSchool\OnlineSchool\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\user\Downloads\schoolmanagement\ONIM's FIRST UPDATE\OnlineSchool\OnlineSchool\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\user\Downloads\schoolmanagement\ONIM's FIRST UPDATE\OnlineSchool\OnlineSchool\bin\roslyn\System.IO.Compression.dll
+C:\Users\user\Downloads\schoolmanagement\ONIM's FIRST UPDATE\OnlineSchool\OnlineSchool\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\user\Downloads\schoolmanagement\ONIM's FIRST UPDATE\OnlineSchool\OnlineSchool\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\user\Downloads\schoolmanagement\ONIM's FIRST UPDATE\OnlineSchool\OnlineSchool\bin\roslyn\System.IO.Pipes.AccessControl.dll
+C:\Users\user\Downloads\schoolmanagement\ONIM's FIRST UPDATE\OnlineSchool\OnlineSchool\bin\roslyn\System.IO.Pipes.dll
+C:\Users\user\Downloads\schoolmanagement\ONIM's FIRST UPDATE\OnlineSchool\OnlineSchool\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\user\Downloads\schoolmanagement\ONIM's FIRST UPDATE\OnlineSchool\OnlineSchool\bin\roslyn\System.Security.AccessControl.dll
+C:\Users\user\Downloads\schoolmanagement\ONIM's FIRST UPDATE\OnlineSchool\OnlineSchool\bin\roslyn\System.Security.Claims.dll
+C:\Users\user\Downloads\schoolmanagement\ONIM's FIRST UPDATE\OnlineSchool\OnlineSchool\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\user\Downloads\schoolmanagement\ONIM's FIRST UPDATE\OnlineSchool\OnlineSchool\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\user\Downloads\schoolmanagement\ONIM's FIRST UPDATE\OnlineSchool\OnlineSchool\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\user\Downloads\schoolmanagement\ONIM's FIRST UPDATE\OnlineSchool\OnlineSchool\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\user\Downloads\schoolmanagement\ONIM's FIRST UPDATE\OnlineSchool\OnlineSchool\bin\roslyn\System.Security.Principal.Windows.dll
+C:\Users\user\Downloads\schoolmanagement\ONIM's FIRST UPDATE\OnlineSchool\OnlineSchool\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\user\Downloads\schoolmanagement\ONIM's FIRST UPDATE\OnlineSchool\OnlineSchool\bin\roslyn\System.ValueTuple.dll
+C:\Users\user\Downloads\schoolmanagement\ONIM's FIRST UPDATE\OnlineSchool\OnlineSchool\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\user\Downloads\schoolmanagement\ONIM's FIRST UPDATE\OnlineSchool\OnlineSchool\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\user\Downloads\schoolmanagement\ONIM's FIRST UPDATE\OnlineSchool\OnlineSchool\bin\roslyn\System.Xml.XPath.dll
+C:\Users\user\Downloads\schoolmanagement\ONIM's FIRST UPDATE\OnlineSchool\OnlineSchool\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\user\Downloads\schoolmanagement\ONIM's FIRST UPDATE\OnlineSchool\OnlineSchool\bin\roslyn\vbc.exe
+C:\Users\user\Downloads\schoolmanagement\ONIM's FIRST UPDATE\OnlineSchool\OnlineSchool\bin\roslyn\vbc.exe.config
+C:\Users\user\Downloads\schoolmanagement\ONIM's FIRST UPDATE\OnlineSchool\OnlineSchool\bin\roslyn\vbc.rsp
+C:\Users\user\Downloads\schoolmanagement\ONIM's FIRST UPDATE\OnlineSchool\OnlineSchool\bin\roslyn\VBCSCompiler.exe
+C:\Users\user\Downloads\schoolmanagement\ONIM's FIRST UPDATE\OnlineSchool\OnlineSchool\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\user\Downloads\schoolmanagement\ONIM's FIRST UPDATE\OnlineSchool\OnlineSchool\bin\Antlr3.Runtime.dll
+C:\Users\user\Downloads\schoolmanagement\ONIM's FIRST UPDATE\OnlineSchool\OnlineSchool\bin\Dapper.dll
+C:\Users\user\Downloads\schoolmanagement\ONIM's FIRST UPDATE\OnlineSchool\OnlineSchool\bin\EntityFramework.dll
+C:\Users\user\Downloads\schoolmanagement\ONIM's FIRST UPDATE\OnlineSchool\OnlineSchool\bin\EntityFramework.SqlServer.dll
+C:\Users\user\Downloads\schoolmanagement\ONIM's FIRST UPDATE\OnlineSchool\OnlineSchool\bin\Microsoft.AspNet.TelemetryCorrelation.dll
+C:\Users\user\Downloads\schoolmanagement\ONIM's FIRST UPDATE\OnlineSchool\OnlineSchool\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\user\Downloads\schoolmanagement\ONIM's FIRST UPDATE\OnlineSchool\OnlineSchool\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\user\Downloads\schoolmanagement\ONIM's FIRST UPDATE\OnlineSchool\OnlineSchool\bin\Newtonsoft.Json.dll
+C:\Users\user\Downloads\schoolmanagement\ONIM's FIRST UPDATE\OnlineSchool\OnlineSchool\bin\System.Diagnostics.DiagnosticSource.dll
+C:\Users\user\Downloads\schoolmanagement\ONIM's FIRST UPDATE\OnlineSchool\OnlineSchool\bin\System.Web.Helpers.dll
+C:\Users\user\Downloads\schoolmanagement\ONIM's FIRST UPDATE\OnlineSchool\OnlineSchool\bin\System.Web.Mvc.dll
+C:\Users\user\Downloads\schoolmanagement\ONIM's FIRST UPDATE\OnlineSchool\OnlineSchool\bin\System.Web.Optimization.dll
+C:\Users\user\Downloads\schoolmanagement\ONIM's FIRST UPDATE\OnlineSchool\OnlineSchool\bin\System.Web.Razor.dll
+C:\Users\user\Downloads\schoolmanagement\ONIM's FIRST UPDATE\OnlineSchool\OnlineSchool\bin\System.Web.WebPages.Deployment.dll
+C:\Users\user\Downloads\schoolmanagement\ONIM's FIRST UPDATE\OnlineSchool\OnlineSchool\bin\System.Web.WebPages.dll
+C:\Users\user\Downloads\schoolmanagement\ONIM's FIRST UPDATE\OnlineSchool\OnlineSchool\bin\System.Web.WebPages.Razor.dll
+C:\Users\user\Downloads\schoolmanagement\ONIM's FIRST UPDATE\OnlineSchool\OnlineSchool\bin\WebGrease.dll
+C:\Users\user\Downloads\schoolmanagement\ONIM's FIRST UPDATE\OnlineSchool\OnlineSchool\bin\Dapper.xml
+C:\Users\user\Downloads\schoolmanagement\ONIM's FIRST UPDATE\OnlineSchool\OnlineSchool\bin\EntityFramework.xml
+C:\Users\user\Downloads\schoolmanagement\ONIM's FIRST UPDATE\OnlineSchool\OnlineSchool\bin\EntityFramework.SqlServer.xml
+C:\Users\user\Downloads\schoolmanagement\ONIM's FIRST UPDATE\OnlineSchool\OnlineSchool\bin\System.Web.Helpers.xml
+C:\Users\user\Downloads\schoolmanagement\ONIM's FIRST UPDATE\OnlineSchool\OnlineSchool\bin\System.Web.Mvc.xml
+C:\Users\user\Downloads\schoolmanagement\ONIM's FIRST UPDATE\OnlineSchool\OnlineSchool\bin\System.Web.Optimization.xml
+C:\Users\user\Downloads\schoolmanagement\ONIM's FIRST UPDATE\OnlineSchool\OnlineSchool\bin\System.Web.Razor.xml
+C:\Users\user\Downloads\schoolmanagement\ONIM's FIRST UPDATE\OnlineSchool\OnlineSchool\bin\System.Web.WebPages.xml
+C:\Users\user\Downloads\schoolmanagement\ONIM's FIRST UPDATE\OnlineSchool\OnlineSchool\bin\System.Web.WebPages.Deployment.xml
+C:\Users\user\Downloads\schoolmanagement\ONIM's FIRST UPDATE\OnlineSchool\OnlineSchool\bin\System.Web.WebPages.Razor.xml
+C:\Users\user\Downloads\schoolmanagement\ONIM's FIRST UPDATE\OnlineSchool\OnlineSchool\bin\Newtonsoft.Json.xml
+C:\Users\user\Downloads\schoolmanagement\ONIM's FIRST UPDATE\OnlineSchool\OnlineSchool\bin\Antlr3.Runtime.pdb
+C:\Users\user\Downloads\schoolmanagement\ONIM's FIRST UPDATE\OnlineSchool\OnlineSchool\bin\System.Diagnostics.DiagnosticSource.xml
+C:\Users\user\Downloads\schoolmanagement\ONIM's FIRST UPDATE\OnlineSchool\OnlineSchool\bin\Microsoft.AspNet.TelemetryCorrelation.xml
+C:\Users\user\Downloads\schoolmanagement\ONIM's FIRST UPDATE\OnlineSchool\OnlineSchool\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\user\Downloads\schoolmanagement\ONIM's FIRST UPDATE\OnlineSchool\OnlineSchool\obj\Debug\OnlineSchool.csprojAssemblyReference.cache
+C:\Users\user\Downloads\schoolmanagement\ONIM's FIRST UPDATE\OnlineSchool\OnlineSchool\obj\Debug\OnlineSchool.csproj.CoreCompileInputs.cache
+C:\Users\user\Downloads\schoolmanagement\ONIM's FIRST UPDATE\OnlineSchool\OnlineSchool\obj\Debug\OnlineSchool.csproj.CopyComplete
+C:\Users\user\Downloads\schoolmanagement\ONIM's FIRST UPDATE\OnlineSchool\OnlineSchool\obj\Debug\OnlineSchool.dll
+C:\Users\user\Downloads\schoolmanagement\ONIM's FIRST UPDATE\OnlineSchool\OnlineSchool\obj\Debug\OnlineSchool.pdb
+E:\3.2\F ADDS EVENTS TEMPLATE\schoolmanagement\ONIM's FIRST UPDATE\OnlineSchool\OnlineSchool\bin\OnlineSchool.dll.config
+E:\3.2\F ADDS EVENTS TEMPLATE\schoolmanagement\ONIM's FIRST UPDATE\OnlineSchool\OnlineSchool\bin\OnlineSchool.dll
+E:\3.2\F ADDS EVENTS TEMPLATE\schoolmanagement\ONIM's FIRST UPDATE\OnlineSchool\OnlineSchool\bin\OnlineSchool.pdb
+E:\3.2\F ADDS EVENTS TEMPLATE\schoolmanagement\ONIM's FIRST UPDATE\OnlineSchool\OnlineSchool\bin\roslyn\csc.exe
+E:\3.2\F ADDS EVENTS TEMPLATE\schoolmanagement\ONIM's FIRST UPDATE\OnlineSchool\OnlineSchool\bin\roslyn\csc.exe.config
+E:\3.2\F ADDS EVENTS TEMPLATE\schoolmanagement\ONIM's FIRST UPDATE\OnlineSchool\OnlineSchool\bin\roslyn\csc.rsp
+E:\3.2\F ADDS EVENTS TEMPLATE\schoolmanagement\ONIM's FIRST UPDATE\OnlineSchool\OnlineSchool\bin\roslyn\csi.exe
+E:\3.2\F ADDS EVENTS TEMPLATE\schoolmanagement\ONIM's FIRST UPDATE\OnlineSchool\OnlineSchool\bin\roslyn\csi.exe.config
+E:\3.2\F ADDS EVENTS TEMPLATE\schoolmanagement\ONIM's FIRST UPDATE\OnlineSchool\OnlineSchool\bin\roslyn\csi.rsp
+E:\3.2\F ADDS EVENTS TEMPLATE\schoolmanagement\ONIM's FIRST UPDATE\OnlineSchool\OnlineSchool\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+E:\3.2\F ADDS EVENTS TEMPLATE\schoolmanagement\ONIM's FIRST UPDATE\OnlineSchool\OnlineSchool\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+E:\3.2\F ADDS EVENTS TEMPLATE\schoolmanagement\ONIM's FIRST UPDATE\OnlineSchool\OnlineSchool\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+E:\3.2\F ADDS EVENTS TEMPLATE\schoolmanagement\ONIM's FIRST UPDATE\OnlineSchool\OnlineSchool\bin\roslyn\Microsoft.CodeAnalysis.dll
+E:\3.2\F ADDS EVENTS TEMPLATE\schoolmanagement\ONIM's FIRST UPDATE\OnlineSchool\OnlineSchool\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+E:\3.2\F ADDS EVENTS TEMPLATE\schoolmanagement\ONIM's FIRST UPDATE\OnlineSchool\OnlineSchool\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+E:\3.2\F ADDS EVENTS TEMPLATE\schoolmanagement\ONIM's FIRST UPDATE\OnlineSchool\OnlineSchool\bin\roslyn\Microsoft.CSharp.Core.targets
+E:\3.2\F ADDS EVENTS TEMPLATE\schoolmanagement\ONIM's FIRST UPDATE\OnlineSchool\OnlineSchool\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+E:\3.2\F ADDS EVENTS TEMPLATE\schoolmanagement\ONIM's FIRST UPDATE\OnlineSchool\OnlineSchool\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+E:\3.2\F ADDS EVENTS TEMPLATE\schoolmanagement\ONIM's FIRST UPDATE\OnlineSchool\OnlineSchool\bin\roslyn\Microsoft.Managed.Core.targets
+E:\3.2\F ADDS EVENTS TEMPLATE\schoolmanagement\ONIM's FIRST UPDATE\OnlineSchool\OnlineSchool\bin\roslyn\Microsoft.VisualBasic.Core.targets
+E:\3.2\F ADDS EVENTS TEMPLATE\schoolmanagement\ONIM's FIRST UPDATE\OnlineSchool\OnlineSchool\bin\roslyn\System.AppContext.dll
+E:\3.2\F ADDS EVENTS TEMPLATE\schoolmanagement\ONIM's FIRST UPDATE\OnlineSchool\OnlineSchool\bin\roslyn\System.Collections.Immutable.dll
+E:\3.2\F ADDS EVENTS TEMPLATE\schoolmanagement\ONIM's FIRST UPDATE\OnlineSchool\OnlineSchool\bin\roslyn\System.Console.dll
+E:\3.2\F ADDS EVENTS TEMPLATE\schoolmanagement\ONIM's FIRST UPDATE\OnlineSchool\OnlineSchool\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+E:\3.2\F ADDS EVENTS TEMPLATE\schoolmanagement\ONIM's FIRST UPDATE\OnlineSchool\OnlineSchool\bin\roslyn\System.Diagnostics.StackTrace.dll
+E:\3.2\F ADDS EVENTS TEMPLATE\schoolmanagement\ONIM's FIRST UPDATE\OnlineSchool\OnlineSchool\bin\roslyn\System.IO.Compression.dll
+E:\3.2\F ADDS EVENTS TEMPLATE\schoolmanagement\ONIM's FIRST UPDATE\OnlineSchool\OnlineSchool\bin\roslyn\System.IO.FileSystem.dll
+E:\3.2\F ADDS EVENTS TEMPLATE\schoolmanagement\ONIM's FIRST UPDATE\OnlineSchool\OnlineSchool\bin\roslyn\System.IO.FileSystem.Primitives.dll
+E:\3.2\F ADDS EVENTS TEMPLATE\schoolmanagement\ONIM's FIRST UPDATE\OnlineSchool\OnlineSchool\bin\roslyn\System.IO.Pipes.AccessControl.dll
+E:\3.2\F ADDS EVENTS TEMPLATE\schoolmanagement\ONIM's FIRST UPDATE\OnlineSchool\OnlineSchool\bin\roslyn\System.IO.Pipes.dll
+E:\3.2\F ADDS EVENTS TEMPLATE\schoolmanagement\ONIM's FIRST UPDATE\OnlineSchool\OnlineSchool\bin\roslyn\System.Reflection.Metadata.dll
+E:\3.2\F ADDS EVENTS TEMPLATE\schoolmanagement\ONIM's FIRST UPDATE\OnlineSchool\OnlineSchool\bin\roslyn\System.Security.AccessControl.dll
+E:\3.2\F ADDS EVENTS TEMPLATE\schoolmanagement\ONIM's FIRST UPDATE\OnlineSchool\OnlineSchool\bin\roslyn\System.Security.Claims.dll
+E:\3.2\F ADDS EVENTS TEMPLATE\schoolmanagement\ONIM's FIRST UPDATE\OnlineSchool\OnlineSchool\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+E:\3.2\F ADDS EVENTS TEMPLATE\schoolmanagement\ONIM's FIRST UPDATE\OnlineSchool\OnlineSchool\bin\roslyn\System.Security.Cryptography.Encoding.dll
+E:\3.2\F ADDS EVENTS TEMPLATE\schoolmanagement\ONIM's FIRST UPDATE\OnlineSchool\OnlineSchool\bin\roslyn\System.Security.Cryptography.Primitives.dll
+E:\3.2\F ADDS EVENTS TEMPLATE\schoolmanagement\ONIM's FIRST UPDATE\OnlineSchool\OnlineSchool\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+E:\3.2\F ADDS EVENTS TEMPLATE\schoolmanagement\ONIM's FIRST UPDATE\OnlineSchool\OnlineSchool\bin\roslyn\System.Security.Principal.Windows.dll
+E:\3.2\F ADDS EVENTS TEMPLATE\schoolmanagement\ONIM's FIRST UPDATE\OnlineSchool\OnlineSchool\bin\roslyn\System.Text.Encoding.CodePages.dll
+E:\3.2\F ADDS EVENTS TEMPLATE\schoolmanagement\ONIM's FIRST UPDATE\OnlineSchool\OnlineSchool\bin\roslyn\System.ValueTuple.dll
+E:\3.2\F ADDS EVENTS TEMPLATE\schoolmanagement\ONIM's FIRST UPDATE\OnlineSchool\OnlineSchool\bin\roslyn\System.Xml.ReaderWriter.dll
+E:\3.2\F ADDS EVENTS TEMPLATE\schoolmanagement\ONIM's FIRST UPDATE\OnlineSchool\OnlineSchool\bin\roslyn\System.Xml.XmlDocument.dll
+E:\3.2\F ADDS EVENTS TEMPLATE\schoolmanagement\ONIM's FIRST UPDATE\OnlineSchool\OnlineSchool\bin\roslyn\System.Xml.XPath.dll
+E:\3.2\F ADDS EVENTS TEMPLATE\schoolmanagement\ONIM's FIRST UPDATE\OnlineSchool\OnlineSchool\bin\roslyn\System.Xml.XPath.XDocument.dll
+E:\3.2\F ADDS EVENTS TEMPLATE\schoolmanagement\ONIM's FIRST UPDATE\OnlineSchool\OnlineSchool\bin\roslyn\vbc.exe
+E:\3.2\F ADDS EVENTS TEMPLATE\schoolmanagement\ONIM's FIRST UPDATE\OnlineSchool\OnlineSchool\bin\roslyn\vbc.exe.config
+E:\3.2\F ADDS EVENTS TEMPLATE\schoolmanagement\ONIM's FIRST UPDATE\OnlineSchool\OnlineSchool\bin\roslyn\vbc.rsp
+E:\3.2\F ADDS EVENTS TEMPLATE\schoolmanagement\ONIM's FIRST UPDATE\OnlineSchool\OnlineSchool\bin\roslyn\VBCSCompiler.exe
+E:\3.2\F ADDS EVENTS TEMPLATE\schoolmanagement\ONIM's FIRST UPDATE\OnlineSchool\OnlineSchool\bin\roslyn\VBCSCompiler.exe.config
+E:\3.2\F ADDS EVENTS TEMPLATE\schoolmanagement\ONIM's FIRST UPDATE\OnlineSchool\OnlineSchool\bin\Antlr3.Runtime.dll
+E:\3.2\F ADDS EVENTS TEMPLATE\schoolmanagement\ONIM's FIRST UPDATE\OnlineSchool\OnlineSchool\bin\Dapper.dll
+E:\3.2\F ADDS EVENTS TEMPLATE\schoolmanagement\ONIM's FIRST UPDATE\OnlineSchool\OnlineSchool\bin\EntityFramework.dll
+E:\3.2\F ADDS EVENTS TEMPLATE\schoolmanagement\ONIM's FIRST UPDATE\OnlineSchool\OnlineSchool\bin\EntityFramework.SqlServer.dll
+E:\3.2\F ADDS EVENTS TEMPLATE\schoolmanagement\ONIM's FIRST UPDATE\OnlineSchool\OnlineSchool\bin\Microsoft.AspNet.TelemetryCorrelation.dll
+E:\3.2\F ADDS EVENTS TEMPLATE\schoolmanagement\ONIM's FIRST UPDATE\OnlineSchool\OnlineSchool\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+E:\3.2\F ADDS EVENTS TEMPLATE\schoolmanagement\ONIM's FIRST UPDATE\OnlineSchool\OnlineSchool\bin\Microsoft.Web.Infrastructure.dll
+E:\3.2\F ADDS EVENTS TEMPLATE\schoolmanagement\ONIM's FIRST UPDATE\OnlineSchool\OnlineSchool\bin\Newtonsoft.Json.dll
+E:\3.2\F ADDS EVENTS TEMPLATE\schoolmanagement\ONIM's FIRST UPDATE\OnlineSchool\OnlineSchool\bin\System.Diagnostics.DiagnosticSource.dll
+E:\3.2\F ADDS EVENTS TEMPLATE\schoolmanagement\ONIM's FIRST UPDATE\OnlineSchool\OnlineSchool\bin\System.Web.Helpers.dll
+E:\3.2\F ADDS EVENTS TEMPLATE\schoolmanagement\ONIM's FIRST UPDATE\OnlineSchool\OnlineSchool\bin\System.Web.Mvc.dll
+E:\3.2\F ADDS EVENTS TEMPLATE\schoolmanagement\ONIM's FIRST UPDATE\OnlineSchool\OnlineSchool\bin\System.Web.Optimization.dll
+E:\3.2\F ADDS EVENTS TEMPLATE\schoolmanagement\ONIM's FIRST UPDATE\OnlineSchool\OnlineSchool\bin\System.Web.Razor.dll
+E:\3.2\F ADDS EVENTS TEMPLATE\schoolmanagement\ONIM's FIRST UPDATE\OnlineSchool\OnlineSchool\bin\System.Web.WebPages.Deployment.dll
+E:\3.2\F ADDS EVENTS TEMPLATE\schoolmanagement\ONIM's FIRST UPDATE\OnlineSchool\OnlineSchool\bin\System.Web.WebPages.dll
+E:\3.2\F ADDS EVENTS TEMPLATE\schoolmanagement\ONIM's FIRST UPDATE\OnlineSchool\OnlineSchool\bin\System.Web.WebPages.Razor.dll
+E:\3.2\F ADDS EVENTS TEMPLATE\schoolmanagement\ONIM's FIRST UPDATE\OnlineSchool\OnlineSchool\bin\WebGrease.dll
+E:\3.2\F ADDS EVENTS TEMPLATE\schoolmanagement\ONIM's FIRST UPDATE\OnlineSchool\OnlineSchool\bin\Dapper.xml
+E:\3.2\F ADDS EVENTS TEMPLATE\schoolmanagement\ONIM's FIRST UPDATE\OnlineSchool\OnlineSchool\bin\EntityFramework.xml
+E:\3.2\F ADDS EVENTS TEMPLATE\schoolmanagement\ONIM's FIRST UPDATE\OnlineSchool\OnlineSchool\bin\EntityFramework.SqlServer.xml
+E:\3.2\F ADDS EVENTS TEMPLATE\schoolmanagement\ONIM's FIRST UPDATE\OnlineSchool\OnlineSchool\bin\System.Web.Helpers.xml
+E:\3.2\F ADDS EVENTS TEMPLATE\schoolmanagement\ONIM's FIRST UPDATE\OnlineSchool\OnlineSchool\bin\System.Web.Mvc.xml
+E:\3.2\F ADDS EVENTS TEMPLATE\schoolmanagement\ONIM's FIRST UPDATE\OnlineSchool\OnlineSchool\bin\System.Web.Optimization.xml
+E:\3.2\F ADDS EVENTS TEMPLATE\schoolmanagement\ONIM's FIRST UPDATE\OnlineSchool\OnlineSchool\bin\System.Web.Razor.xml
+E:\3.2\F ADDS EVENTS TEMPLATE\schoolmanagement\ONIM's FIRST UPDATE\OnlineSchool\OnlineSchool\bin\System.Web.WebPages.xml
+E:\3.2\F ADDS EVENTS TEMPLATE\schoolmanagement\ONIM's FIRST UPDATE\OnlineSchool\OnlineSchool\bin\System.Web.WebPages.Deployment.xml
+E:\3.2\F ADDS EVENTS TEMPLATE\schoolmanagement\ONIM's FIRST UPDATE\OnlineSchool\OnlineSchool\bin\System.Web.WebPages.Razor.xml
+E:\3.2\F ADDS EVENTS TEMPLATE\schoolmanagement\ONIM's FIRST UPDATE\OnlineSchool\OnlineSchool\bin\Newtonsoft.Json.xml
+E:\3.2\F ADDS EVENTS TEMPLATE\schoolmanagement\ONIM's FIRST UPDATE\OnlineSchool\OnlineSchool\bin\Antlr3.Runtime.pdb
+E:\3.2\F ADDS EVENTS TEMPLATE\schoolmanagement\ONIM's FIRST UPDATE\OnlineSchool\OnlineSchool\bin\System.Diagnostics.DiagnosticSource.xml
+E:\3.2\F ADDS EVENTS TEMPLATE\schoolmanagement\ONIM's FIRST UPDATE\OnlineSchool\OnlineSchool\bin\Microsoft.AspNet.TelemetryCorrelation.xml
+E:\3.2\F ADDS EVENTS TEMPLATE\schoolmanagement\ONIM's FIRST UPDATE\OnlineSchool\OnlineSchool\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+E:\3.2\F ADDS EVENTS TEMPLATE\schoolmanagement\ONIM's FIRST UPDATE\OnlineSchool\OnlineSchool\obj\Debug\OnlineSchool.csprojAssemblyReference.cache
+E:\3.2\F ADDS EVENTS TEMPLATE\schoolmanagement\ONIM's FIRST UPDATE\OnlineSchool\OnlineSchool\obj\Debug\OnlineSchool.csproj.CoreCompileInputs.cache
+E:\3.2\F ADDS EVENTS TEMPLATE\schoolmanagement\ONIM's FIRST UPDATE\OnlineSchool\OnlineSchool\obj\Debug\OnlineSchool.csproj.CopyComplete
+E:\3.2\F ADDS EVENTS TEMPLATE\schoolmanagement\ONIM's FIRST UPDATE\OnlineSchool\OnlineSchool\obj\Debug\OnlineSchool.dll
+E:\3.2\F ADDS EVENTS TEMPLATE\schoolmanagement\ONIM's FIRST UPDATE\OnlineSchool\OnlineSchool\obj\Debug\OnlineSchool.pdb

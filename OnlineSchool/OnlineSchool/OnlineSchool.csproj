@@ -1,0 +1,701 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{8C4ACCE6-78CD-4C48-B3A6-E47F936157DE}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>OnlineSchool</RootNamespace>
+    <AssemblyName>OnlineSchool</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <MvcBuildViews>false</MvcBuildViews>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Dapper, Version=1.60.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Dapper.1.60.6\lib\net451\Dapper.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Abstractions" />
+    <Reference Include="System.Web.Routing" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http">
+    </Reference>
+    <Reference Include="System.Net.Http.WebRequest">
+    </Reference>
+    <Reference Include="System.Web.Helpers, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.4\lib\net45\System.Web.Helpers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Mvc, Version=5.2.4.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.Mvc.5.2.4\lib\net45\System.Web.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Optimization">
+      <HintPath>..\packages\Microsoft.AspNet.Web.Optimization.1.1.3\lib\net40\System.Web.Optimization.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.Razor.3.2.4\lib\net45\System.Web.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.4\lib\net45\System.Web.WebPages.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Deployment, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.4\lib\net45\System.Web.WebPages.Deployment.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.4\lib\net45\System.Web.WebPages.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\packages\Newtonsoft.Json.11.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="WebGrease">
+      <Private>True</Private>
+      <HintPath>..\packages\WebGrease.1.6.0\lib\WebGrease.dll</HintPath>
+    </Reference>
+    <Reference Include="Antlr3.Runtime">
+      <Private>True</Private>
+      <HintPath>..\packages\Antlr.3.5.0.2\lib\Antlr3.Runtime.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="System.Diagnostics.DiagnosticSource">
+      <HintPath>..\packages\System.Diagnostics.DiagnosticSource.4.4.1\lib\net46\System.Diagnostics.DiagnosticSource.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.TelemetryCorrelation">
+      <HintPath>..\packages\Microsoft.AspNet.TelemetryCorrelation.1.0.0\lib\net45\Microsoft.AspNet.TelemetryCorrelation.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App_Start\BundleConfig.cs" />
+    <Compile Include="App_Start\FilterConfig.cs" />
+    <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\ADMINsController.cs" />
+    <Compile Include="Controllers\ATTENDANCEsController.cs" />
+    <Compile Include="Controllers\CLASSesController.cs" />
+    <Compile Include="Controllers\CLASSROUTINEsController.cs" />
+    <Compile Include="Controllers\EVENTsController.cs" />
+    <Compile Include="Controllers\GUARDIANREVIEWsController.cs" />
+    <Compile Include="Controllers\GUARDIANsController.cs" />
+    <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\PAYMENTsController.cs" />
+    <Compile Include="Controllers\RESULTsController.cs" />
+    <Compile Include="Controllers\SECTIONsController.cs" />
+    <Compile Include="Controllers\STUDENTsController.cs" />
+    <Compile Include="Controllers\SUBJECTsController.cs" />
+    <Compile Include="Controllers\TEACHERsController.cs" />
+    <Compile Include="Controllers\TEACHER_ROUTINEController.cs" />
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="Models\ADMIN.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\ATTENDANCE.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\CLASS.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\CLASSROUTINE.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\EVENT.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\GUARDIAN.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\GUARDIANREVIEW.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Model1.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Model1.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Model1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Model1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Model1.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Models\PAYMENT.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\RESULT.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\SECTION.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\STUDENT.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\SUBJECT.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\TEACHER.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\TEACHER_ROUTINE.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_Data\OSMS.mdf" />
+    <Content Include="App_Data\OSMS_log.ldf">
+      <DependentUpon>OSMS.mdf</DependentUpon>
+    </Content>
+    <Content Include="Content\osms\about.html" />
+    <Content Include="Content\osms\contact.html" />
+    <Content Include="Content\osms\css\animate.css" />
+    <Content Include="Content\osms\css\bootstrap.css" />
+    <Content Include="Content\osms\css\owl.carousel.min.css" />
+    <Content Include="Content\osms\css\style.css" />
+    <Content Include="Content\osms\fonts\flaticon\backup.txt" />
+    <Content Include="Content\osms\fonts\flaticon\font\flaticon.css" />
+    <Content Include="Content\osms\fonts\flaticon\font\flaticon.html" />
+    <Content Include="Content\osms\fonts\flaticon\font\Flaticon.svg" />
+    <Content Include="Content\osms\fonts\fontawesome\css\font-awesome.min.css" />
+    <Content Include="Content\osms\fonts\fontawesome\fonts\fontawesome-webfont.svg" />
+    <Content Include="Content\osms\fonts\ionicons\cheatsheet.html" />
+    <Content Include="Content\osms\fonts\ionicons\css\ionicons.css" />
+    <Content Include="Content\osms\fonts\ionicons\css\ionicons.min.css" />
+    <Content Include="Content\osms\fonts\ionicons\fonts\ionicons.svg" />
+    <Content Include="Content\osms\guardianlogin.html" />
+    <Content Include="Content\osms\images\angularjs.jpg" />
+    <Content Include="Content\osms\images\author.jpg" />
+    <Content Include="Content\osms\images\become.jpg" />
+    <Content Include="Content\osms\images\bg-03.jpg" />
+    <Content Include="Content\osms\images\bg-1.jpg" />
+    <Content Include="Content\osms\images\bg-2.jpg" />
+    <Content Include="Content\osms\images\big_image_1.jpg" />
+    <Content Include="Content\osms\images\big_image_3.jpg" />
+    <Content Include="Content\osms\images\blackboard.svg" />
+    <Content Include="Content\osms\images\books.svg" />
+    <Content Include="Content\osms\images\building.jpg" />
+    <Content Include="Content\osms\images\canteen1.jpg" />
+    <Content Include="Content\osms\images\comment_1.jpg" />
+    <Content Include="Content\osms\images\comment_2.jpg" />
+    <Content Include="Content\osms\images\contact_background.jpg" />
+    <Content Include="Content\osms\images\courses_background.jpg" />
+    <Content Include="Content\osms\images\course_1.jpg" />
+    <Content Include="Content\osms\images\course_2.jpg" />
+    <Content Include="Content\osms\images\course_3.jpg" />
+    <Content Include="Content\osms\images\course_4.jpg" />
+    <Content Include="Content\osms\images\course_5.jpg" />
+    <Content Include="Content\osms\images\course_6.jpg" />
+    <Content Include="Content\osms\images\course_7.jpg" />
+    <Content Include="Content\osms\images\course_8.jpg" />
+    <Content Include="Content\osms\images\course_9.jpg" />
+    <Content Include="Content\osms\images\earth-globe.svg" />
+    <Content Include="Content\osms\images\envelope.svg" />
+    <Content Include="Content\osms\images\event_1.jpg" />
+    <Content Include="Content\osms\images\event_2.jpg" />
+    <Content Include="Content\osms\images\event_3.jpg" />
+    <Content Include="Content\osms\images\exam.svg" />
+    <Content Include="Content\osms\images\guardian.jpg" />
+    <Content Include="Content\osms\images\img_1.jpg" />
+    <Content Include="Content\osms\images\img_2.jpg" />
+    <Content Include="Content\osms\images\img_3.jpg" />
+    <Content Include="Content\osms\images\javascript.jpg" />
+    <Content Include="Content\osms\images\lab1.jpg" />
+    <Content Include="Content\osms\images\lab2.jpg" />
+    <Content Include="Content\osms\images\lab3.jpg" />
+    <Content Include="Content\osms\images\latest_1.jpg" />
+    <Content Include="Content\osms\images\latest_2.jpg" />
+    <Content Include="Content\osms\images\latest_3.jpg" />
+    <Content Include="Content\osms\images\logo.png" />
+    <Content Include="Content\osms\images\milestones_background.jpg" />
+    <Content Include="Content\osms\images\milestone_1.svg" />
+    <Content Include="Content\osms\images\milestone_2.svg" />
+    <Content Include="Content\osms\images\milestone_3.svg" />
+    <Content Include="Content\osms\images\milestone_4.svg" />
+    <Content Include="Content\osms\images\mortarboard.svg" />
+    <Content Include="Content\osms\images\news_1.jpg" />
+    <Content Include="Content\osms\images\news_2.jpg" />
+    <Content Include="Content\osms\images\news_3.jpg" />
+    <Content Include="Content\osms\images\news_background.jpg" />
+    <Content Include="Content\osms\images\person_1.jpg" />
+    <Content Include="Content\osms\images\person_2.jpg" />
+    <Content Include="Content\osms\images\person_3.jpg" />
+    <Content Include="Content\osms\images\person_4.jpg" />
+    <Content Include="Content\osms\images\person_5.jpg" />
+    <Content Include="Content\osms\images\person_6.jpg" />
+    <Content Include="Content\osms\images\person_testimonial_1.jpg" />
+    <Content Include="Content\osms\images\phone-call.svg" />
+    <Content Include="Content\osms\images\photoshop.jpg" />
+    <Content Include="Content\osms\images\placeholder.svg" />
+    <Content Include="Content\osms\images\professor.svg" />
+    <Content Include="Content\osms\images\reactjs.jpg" />
+    <Content Include="Content\osms\images\search_background.jpg" />
+    <Content Include="Content\osms\images\slider_background.jpg" />
+    <Content Include="Content\osms\images\smartphone.svg" />
+    <Content Include="Content\osms\images\student.jpg" />
+    <Content Include="Content\osms\images\teachers_background.jpg" />
+    <Content Include="Content\osms\images\teacher_1.jpg" />
+    <Content Include="Content\osms\images\teacher_2.jpg" />
+    <Content Include="Content\osms\images\teacher_3.jpg" />
+    <Content Include="Content\osms\images\teacher_4.jpg" />
+    <Content Include="Content\osms\images\teacher_5.jpg" />
+    <Content Include="Content\osms\images\teacher_6.jpg" />
+    <Content Include="Content\osms\images\testimonials_background.jpg" />
+    <Content Include="Content\osms\images\testimonials_background_2.jpg" />
+    <Content Include="Content\osms\images\testimonials_user.jpg" />
+    <Content Include="Content\osms\images\webdesign.jpg" />
+    <Content Include="Content\osms\images\wordpress.jpg" />
+    <Content Include="Content\osms\index.html" />
+    <Content Include="Content\osms\js\bootstrap.min.js" />
+    <Content Include="Content\osms\js\contact_custom.js" />
+    <Content Include="Content\osms\js\courses_custom.js" />
+    <Content Include="Content\osms\js\custom.js" />
+    <Content Include="Content\osms\js\elements_custom.js" />
+    <Content Include="Content\osms\js\jquery-3.2.1.min.js" />
+    <Content Include="Content\osms\js\jquery-migrate-3.0.0.js" />
+    <Content Include="Content\osms\js\jquery.stellar.min.js" />
+    <Content Include="Content\osms\js\jquery.waypoints.min.js" />
+    <Content Include="Content\osms\js\main.js" />
+    <Content Include="Content\osms\js\news_custom.js" />
+    <Content Include="Content\osms\js\news_post_custom.js" />
+    <Content Include="Content\osms\js\owl.carousel.min.js" />
+    <Content Include="Content\osms\js\popper.min.js" />
+    <Content Include="Content\osms\js\teachers_custom.js" />
+    <Content Include="Content\osms\plugins\easing\easing.js" />
+    <Content Include="Content\osms\plugins\fontawesome-free-5.0.1\css\fontawesome-all.css" />
+    <Content Include="Content\osms\plugins\fontawesome-free-5.0.1\webfonts\fa-brands-400.svg" />
+    <Content Include="Content\osms\plugins\fontawesome-free-5.0.1\webfonts\fa-regular-400.svg" />
+    <Content Include="Content\osms\plugins\fontawesome-free-5.0.1\webfonts\fa-solid-900.svg" />
+    <Content Include="Content\osms\plugins\greensock\animation.gsap.min.js" />
+    <Content Include="Content\osms\plugins\greensock\ScrollToPlugin.min.js" />
+    <Content Include="Content\osms\plugins\greensock\TimelineMax.min.js" />
+    <Content Include="Content\osms\plugins\greensock\TweenMax.min.js" />
+    <Content Include="Content\osms\plugins\OwlCarousel2-2.2.1\ajax-loader.gif" />
+    <Content Include="Content\osms\plugins\OwlCarousel2-2.2.1\animate.css" />
+    <Content Include="Content\osms\plugins\OwlCarousel2-2.2.1\owl.carousel.css" />
+    <Content Include="Content\osms\plugins\OwlCarousel2-2.2.1\owl.carousel.js" />
+    <Content Include="Content\osms\plugins\OwlCarousel2-2.2.1\owl.theme.default.css" />
+    <Content Include="Content\osms\plugins\OwlCarousel2-2.2.1\owl.video.play.png" />
+    <Content Include="Content\osms\plugins\parallax.js-2.0.0\jquery.parallax.min.js" />
+    <Content Include="Content\osms\plugins\progressbar\progressbar.min.js" />
+    <Content Include="Content\osms\plugins\scrollmagic\ScrollMagic.min.js" />
+    <Content Include="Content\osms\plugins\scrollTo\jquery.scrollTo.min.js" />
+    <Content Include="Content\osms\studentlogin.html" />
+    <Content Include="Content\osms\styles\bootstrap4\bootstrap.min.css" />
+    <Content Include="Content\osms\styles\bootstrap4\bootstrap.min.js" />
+    <Content Include="Content\osms\styles\bootstrap4\popper.js" />
+    <Content Include="Content\osms\styles\contact_responsive.css" />
+    <Content Include="Content\osms\styles\contact_styles.css" />
+    <Content Include="Content\osms\styles\courses_responsive.css" />
+    <Content Include="Content\osms\styles\courses_styles.css" />
+    <Content Include="Content\osms\styles\elements_responsive.css" />
+    <Content Include="Content\osms\styles\elements_styles.css" />
+    <Content Include="Content\osms\styles\main_styles.css" />
+    <Content Include="Content\osms\styles\news_post_responsive.css" />
+    <Content Include="Content\osms\styles\news_post_styles.css" />
+    <Content Include="Content\osms\styles\news_responsive.css" />
+    <Content Include="Content\osms\styles\news_styles.css" />
+    <Content Include="Content\osms\styles\responsive.css" />
+    <Content Include="Content\osms\styles\teachers_responsive.css" />
+    <Content Include="Content\osms\styles\teachers_styles.css" />
+    <Content Include="Content\osms\teacherlogin.html" />
+    <Content Include="EVENT IMAGES\bd.png" />
+    <Content Include="favicon.ico" />
+    <Content Include="fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Global.asax" />
+    <Content Include="Content\Site.css" />
+    <Content Include="Models\Model1.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>Model1.Context.cs</LastGenOutput>
+      <DependentUpon>Model1.edmx</DependentUpon>
+    </Content>
+    <Content Include="Models\Model1.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>Model1.edmx</DependentUpon>
+      <LastGenOutput>Model1.cs</LastGenOutput>
+    </Content>
+    <Content Include="Scripts\bootstrap.js" />
+    <Content Include="Scripts\bootstrap.min.js" />
+    <EntityDeploy Include="Models\Model1.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>Model1.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <Content Include="Models\Model1.edmx.diagram">
+      <DependentUpon>Model1.edmx</DependentUpon>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Content\osms\.DS_Store" />
+    <Content Include="Content\osms\css\bootstrap.css.map" />
+    <Content Include="Content\osms\fonts\.DS_Store" />
+    <Content Include="Content\osms\fonts\flaticon\.DS_Store" />
+    <Content Include="Content\osms\fonts\flaticon\font\Flaticon.eot" />
+    <Content Include="Content\osms\fonts\flaticon\font\Flaticon.ttf" />
+    <Content Include="Content\osms\fonts\flaticon\font\Flaticon.woff" />
+    <Content Include="Content\osms\fonts\flaticon\font\_flaticon.scss" />
+    <Content Include="Content\osms\fonts\flaticon\license\license.pdf" />
+    <Content Include="Content\osms\fonts\fontawesome\fonts\fontawesome-webfont.eot" />
+    <Content Include="Content\osms\fonts\fontawesome\fonts\fontawesome-webfont.ttf" />
+    <Content Include="Content\osms\fonts\fontawesome\fonts\fontawesome-webfont.woff" />
+    <Content Include="Content\osms\fonts\fontawesome\fonts\fontawesome-webfont.woff2" />
+    <Content Include="Content\osms\fonts\ionicons\.DS_Store" />
+    <Content Include="Content\osms\fonts\ionicons\fonts\ionicons.eot" />
+    <Content Include="Content\osms\fonts\ionicons\fonts\ionicons.ttf" />
+    <Content Include="Content\osms\fonts\ionicons\fonts\ionicons.woff" />
+    <Content Include="Content\osms\images\.DS_Store" />
+    <Content Include="Content\osms\plugins\fontawesome-free-5.0.1\webfonts\fa-brands-400.eot" />
+    <Content Include="Content\osms\plugins\fontawesome-free-5.0.1\webfonts\fa-brands-400.ttf" />
+    <Content Include="Content\osms\plugins\fontawesome-free-5.0.1\webfonts\fa-brands-400.woff" />
+    <Content Include="Content\osms\plugins\fontawesome-free-5.0.1\webfonts\fa-brands-400.woff2" />
+    <Content Include="Content\osms\plugins\fontawesome-free-5.0.1\webfonts\fa-regular-400.eot" />
+    <Content Include="Content\osms\plugins\fontawesome-free-5.0.1\webfonts\fa-regular-400.ttf" />
+    <Content Include="Content\osms\plugins\fontawesome-free-5.0.1\webfonts\fa-regular-400.woff" />
+    <Content Include="Content\osms\plugins\fontawesome-free-5.0.1\webfonts\fa-regular-400.woff2" />
+    <Content Include="Content\osms\plugins\fontawesome-free-5.0.1\webfonts\fa-solid-900.eot" />
+    <Content Include="Content\osms\plugins\fontawesome-free-5.0.1\webfonts\fa-solid-900.ttf" />
+    <Content Include="Content\osms\plugins\fontawesome-free-5.0.1\webfonts\fa-solid-900.woff" />
+    <Content Include="Content\osms\plugins\fontawesome-free-5.0.1\webfonts\fa-solid-900.woff2" />
+    <Content Include="Content\osms\scss\.DS_Store" />
+    <Content Include="Content\osms\scss\bootstrap-grid.scss" />
+    <Content Include="Content\osms\scss\bootstrap-reboot.scss" />
+    <Content Include="Content\osms\scss\bootstrap.scss" />
+    <Content Include="Content\osms\scss\mixins\_alert.scss" />
+    <Content Include="Content\osms\scss\mixins\_background-variant.scss" />
+    <Content Include="Content\osms\scss\mixins\_badge.scss" />
+    <Content Include="Content\osms\scss\mixins\_border-radius.scss" />
+    <Content Include="Content\osms\scss\mixins\_box-shadow.scss" />
+    <Content Include="Content\osms\scss\mixins\_breakpoints.scss" />
+    <Content Include="Content\osms\scss\mixins\_buttons.scss" />
+    <Content Include="Content\osms\scss\mixins\_caret.scss" />
+    <Content Include="Content\osms\scss\mixins\_clearfix.scss" />
+    <Content Include="Content\osms\scss\mixins\_float.scss" />
+    <Content Include="Content\osms\scss\mixins\_forms.scss" />
+    <Content Include="Content\osms\scss\mixins\_gradients.scss" />
+    <Content Include="Content\osms\scss\mixins\_grid-framework.scss" />
+    <Content Include="Content\osms\scss\mixins\_grid.scss" />
+    <Content Include="Content\osms\scss\mixins\_hover.scss" />
+    <Content Include="Content\osms\scss\mixins\_image.scss" />
+    <Content Include="Content\osms\scss\mixins\_list-group.scss" />
+    <Content Include="Content\osms\scss\mixins\_lists.scss" />
+    <Content Include="Content\osms\scss\mixins\_nav-divider.scss" />
+    <Content Include="Content\osms\scss\mixins\_navbar-align.scss" />
+    <Content Include="Content\osms\scss\mixins\_pagination.scss" />
+    <Content Include="Content\osms\scss\mixins\_reset-text.scss" />
+    <Content Include="Content\osms\scss\mixins\_resize.scss" />
+    <Content Include="Content\osms\scss\mixins\_screen-reader.scss" />
+    <Content Include="Content\osms\scss\mixins\_size.scss" />
+    <Content Include="Content\osms\scss\mixins\_table-row.scss" />
+    <Content Include="Content\osms\scss\mixins\_text-emphasis.scss" />
+    <Content Include="Content\osms\scss\mixins\_text-hide.scss" />
+    <Content Include="Content\osms\scss\mixins\_text-truncate.scss" />
+    <Content Include="Content\osms\scss\mixins\_transition.scss" />
+    <Content Include="Content\osms\scss\mixins\_visibility.scss" />
+    <Content Include="Content\osms\scss\style.scss" />
+    <Content Include="Content\osms\scss\utilities\_align.scss" />
+    <Content Include="Content\osms\scss\utilities\_background.scss" />
+    <Content Include="Content\osms\scss\utilities\_borders.scss" />
+    <Content Include="Content\osms\scss\utilities\_clearfix.scss" />
+    <Content Include="Content\osms\scss\utilities\_display.scss" />
+    <Content Include="Content\osms\scss\utilities\_embed.scss" />
+    <Content Include="Content\osms\scss\utilities\_flex.scss" />
+    <Content Include="Content\osms\scss\utilities\_float.scss" />
+    <Content Include="Content\osms\scss\utilities\_position.scss" />
+    <Content Include="Content\osms\scss\utilities\_screenreaders.scss" />
+    <Content Include="Content\osms\scss\utilities\_sizing.scss" />
+    <Content Include="Content\osms\scss\utilities\_spacing.scss" />
+    <Content Include="Content\osms\scss\utilities\_text.scss" />
+    <Content Include="Content\osms\scss\utilities\_visibility.scss" />
+    <Content Include="Content\osms\scss\_alert.scss" />
+    <Content Include="Content\osms\scss\_badge.scss" />
+    <Content Include="Content\osms\scss\_breadcrumb.scss" />
+    <Content Include="Content\osms\scss\_button-group.scss" />
+    <Content Include="Content\osms\scss\_buttons.scss" />
+    <Content Include="Content\osms\scss\_card.scss" />
+    <Content Include="Content\osms\scss\_carousel.scss" />
+    <Content Include="Content\osms\scss\_close.scss" />
+    <Content Include="Content\osms\scss\_code.scss" />
+    <Content Include="Content\osms\scss\_custom-forms.scss" />
+    <Content Include="Content\osms\scss\_custom.scss" />
+    <Content Include="Content\osms\scss\_dropdown.scss" />
+    <Content Include="Content\osms\scss\_forms.scss" />
+    <Content Include="Content\osms\scss\_functions.scss" />
+    <Content Include="Content\osms\scss\_grid.scss" />
+    <Content Include="Content\osms\scss\_images.scss" />
+    <Content Include="Content\osms\scss\_input-group.scss" />
+    <Content Include="Content\osms\scss\_jumbotron.scss" />
+    <Content Include="Content\osms\scss\_list-group.scss" />
+    <Content Include="Content\osms\scss\_media.scss" />
+    <Content Include="Content\osms\scss\_mixins.scss" />
+    <Content Include="Content\osms\scss\_modal.scss" />
+    <Content Include="Content\osms\scss\_nav.scss" />
+    <Content Include="Content\osms\scss\_navbar.scss" />
+    <Content Include="Content\osms\scss\_pagination.scss" />
+    <Content Include="Content\osms\scss\_popover.scss" />
+    <Content Include="Content\osms\scss\_print.scss" />
+    <Content Include="Content\osms\scss\_progress.scss" />
+    <Content Include="Content\osms\scss\_reboot.scss" />
+    <Content Include="Content\osms\scss\_root.scss" />
+    <Content Include="Content\osms\scss\_tables.scss" />
+    <Content Include="Content\osms\scss\_tooltip.scss" />
+    <Content Include="Content\osms\scss\_transitions.scss" />
+    <Content Include="Content\osms\scss\_type.scss" />
+    <Content Include="Content\osms\scss\_utilities.scss" />
+    <Content Include="Content\osms\scss\_variables.scss" />
+    <None Include="Scripts\jquery-3.3.1.intellisense.js" />
+    <Content Include="Scripts\jquery-3.3.1.js" />
+    <Content Include="Scripts\jquery-3.3.1.min.js" />
+    <Content Include="Scripts\jquery-3.3.1.slim.js" />
+    <Content Include="Scripts\jquery-3.3.1.slim.min.js" />
+    <None Include="Scripts\jquery.validate-vsdoc.js" />
+    <Content Include="Scripts\jquery.validate.js" />
+    <Content Include="Scripts\jquery.validate.min.js" />
+    <Content Include="Scripts\jquery.validate.unobtrusive.js" />
+    <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
+    <Content Include="Scripts\modernizr-2.8.3.js" />
+    <Content Include="Web.config" />
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Views\Web.config" />
+    <Content Include="Views\_ViewStart.cshtml" />
+    <Content Include="Views\Shared\Error.cshtml" />
+    <Content Include="Views\Shared\_Layout.cshtml" />
+    <Content Include="Views\Home\About.cshtml" />
+    <Content Include="Views\Home\Contact.cshtml" />
+    <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\ADMINs\Create.cshtml" />
+    <Content Include="Views\ADMINs\Delete.cshtml" />
+    <Content Include="Views\ADMINs\Details.cshtml" />
+    <Content Include="Views\ADMINs\Edit.cshtml" />
+    <Content Include="Views\ADMINs\Index.cshtml" />
+    <Content Include="Views\ATTENDANCEs\Create.cshtml" />
+    <Content Include="Views\ATTENDANCEs\Delete.cshtml" />
+    <Content Include="Views\ATTENDANCEs\Details.cshtml" />
+    <Content Include="Views\ATTENDANCEs\Edit.cshtml" />
+    <Content Include="Views\ATTENDANCEs\Index.cshtml" />
+    <Content Include="Views\CLASSes\Create.cshtml" />
+    <Content Include="Views\CLASSes\Delete.cshtml" />
+    <Content Include="Views\CLASSes\Details.cshtml" />
+    <Content Include="Views\CLASSes\Edit.cshtml" />
+    <Content Include="Views\CLASSes\Index.cshtml" />
+    <Content Include="Views\CLASSROUTINEs\Create.cshtml" />
+    <Content Include="Views\CLASSROUTINEs\Delete.cshtml" />
+    <Content Include="Views\CLASSROUTINEs\Details.cshtml" />
+    <Content Include="Views\CLASSROUTINEs\Edit.cshtml" />
+    <Content Include="Views\CLASSROUTINEs\Index.cshtml" />
+    <Content Include="Views\EVENTs\Create.cshtml" />
+    <Content Include="Views\EVENTs\Delete.cshtml" />
+    <Content Include="Views\EVENTs\Details.cshtml" />
+    <Content Include="Views\EVENTs\Edit.cshtml" />
+    <Content Include="Views\EVENTs\Index.cshtml" />
+    <Content Include="Views\GUARDIANs\Create.cshtml" />
+    <Content Include="Views\GUARDIANs\Delete.cshtml" />
+    <Content Include="Views\GUARDIANs\Details.cshtml" />
+    <Content Include="Views\GUARDIANs\Edit.cshtml" />
+    <Content Include="Views\GUARDIANs\Index.cshtml" />
+    <Content Include="Views\GUARDIANREVIEWs\Create.cshtml" />
+    <Content Include="Views\GUARDIANREVIEWs\Delete.cshtml" />
+    <Content Include="Views\GUARDIANREVIEWs\Details.cshtml" />
+    <Content Include="Views\GUARDIANREVIEWs\Edit.cshtml" />
+    <Content Include="Views\GUARDIANREVIEWs\Index.cshtml" />
+    <Content Include="Views\PAYMENTs\Create.cshtml" />
+    <Content Include="Views\PAYMENTs\Delete.cshtml" />
+    <Content Include="Views\PAYMENTs\Details.cshtml" />
+    <Content Include="Views\PAYMENTs\Edit.cshtml" />
+    <Content Include="Views\PAYMENTs\Index.cshtml" />
+    <Content Include="Views\RESULTs\Create.cshtml" />
+    <Content Include="Views\RESULTs\Delete.cshtml" />
+    <Content Include="Views\RESULTs\Details.cshtml" />
+    <Content Include="Views\RESULTs\Edit.cshtml" />
+    <Content Include="Views\RESULTs\Index.cshtml" />
+    <Content Include="Views\SECTIONs\Create.cshtml" />
+    <Content Include="Views\SECTIONs\Delete.cshtml" />
+    <Content Include="Views\SECTIONs\Details.cshtml" />
+    <Content Include="Views\SECTIONs\Edit.cshtml" />
+    <Content Include="Views\SECTIONs\Index.cshtml" />
+    <Content Include="Views\STUDENTs\Create.cshtml" />
+    <Content Include="Views\STUDENTs\Delete.cshtml" />
+    <Content Include="Views\STUDENTs\Details.cshtml" />
+    <Content Include="Views\STUDENTs\Edit.cshtml" />
+    <Content Include="Views\STUDENTs\Index.cshtml" />
+    <Content Include="Views\SUBJECTs\Create.cshtml" />
+    <Content Include="Views\SUBJECTs\Delete.cshtml" />
+    <Content Include="Views\SUBJECTs\Details.cshtml" />
+    <Content Include="Views\SUBJECTs\Edit.cshtml" />
+    <Content Include="Views\SUBJECTs\Index.cshtml" />
+    <Content Include="Views\TEACHERs\Create.cshtml" />
+    <Content Include="Views\TEACHERs\Delete.cshtml" />
+    <Content Include="Views\TEACHERs\Details.cshtml" />
+    <Content Include="Views\TEACHERs\Edit.cshtml" />
+    <Content Include="Views\TEACHERs\Index.cshtml" />
+    <Content Include="Views\TEACHER_ROUTINE\Create.cshtml" />
+    <Content Include="Views\TEACHER_ROUTINE\Delete.cshtml" />
+    <Content Include="Views\TEACHER_ROUTINE\Details.cshtml" />
+    <Content Include="Views\TEACHER_ROUTINE\Edit.cshtml" />
+    <Content Include="Views\TEACHER_ROUTINE\Index.cshtml" />
+    <Content Include="Views\STUDENTs\Login.cshtml" />
+    <Content Include="Views\STUDENTs\LoggedIn.cshtml" />
+    <Content Include="Views\GUARDIANs\Login2.cshtml" />
+    <Content Include="Views\GUARDIANs\LoggedIn2.cshtml" />
+    <Content Include="Views\TEACHERs\Login3.cshtml" />
+    <Content Include="Views\TEACHERs\LoggedIn3.cshtml" />
+    <Content Include="Views\ADMINs\Login4.cshtml" />
+    <Content Include="Views\ADMINs\LoggedIn4.cshtml" />
+    <Content Include="Views\ADMINs\ViewProfile.cshtml" />
+    <Content Include="Views\CLASSROUTINEs\DownloadClassRoutineForStudents.cshtml" />
+    <Content Include="Views\ATTENDANCEs\ViewAttendaceForStudents.cshtml" />
+    <Content Include="Views\ATTENDANCEs\ViewAttendaceForStudentsByDate.cshtml" />
+    <Content Include="Views\RESULTs\ViewResultForStudents.cshtml" />
+    <Content Include="Views\RESULTs\ViewResultForStudentsBySubject.cshtml" />
+    <Content Include="Views\CLASSROUTINEs\DownloadClassRoutineForGuardians.cshtml" />
+    <Content Include="Views\ATTENDANCEs\ViewAttendaceForGuardian.cshtml" />
+    <Content Include="Views\ATTENDANCEs\ViewAttendaceForGuardiansByDate.cshtml" />
+    <Content Include="Views\RESULTs\ViewResultForGuardians.cshtml" />
+    <Content Include="Views\RESULTs\ViewResultForGuardiansBySubject.cshtml" />
+    <Content Include="Views\GUARDIANs\ViewProfile.cshtml" />
+    <Content Include="Views\STUDENTs\ViewProfile.cshtml" />
+    <Content Include="Views\TEACHER_ROUTINE\DownloadTeacherRoutine.cshtml" />
+    <Content Include="Views\TEACHERs\ViewProfile.cshtml" />
+    <Content Include="Views\ATTENDANCEs\ViewAttendaceForTeacher.cshtml" />
+    <Content Include="Views\ATTENDANCEs\ViewAttendaceForTeachersByDate.cshtml" />
+    <Content Include="Views\RESULTs\ViewResultForTeachers.cshtml" />
+    <Content Include="Views\RESULTs\ViewResultForTeachersBySubject.cshtml" />
+    <Content Include="Views\EVENTs\SortByDate.cshtml" />
+    <Content Include="Views\ADMINs\AllList.cshtml" />
+    <Content Include="Views\RESULTs\Create1.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="CLASS ROUTINE FILES\" />
+    <Folder Include="EVENT PDF\" />
+    <Folder Include="TEACHER ROUTINE\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="fonts\glyphicons-halflings-regular.eot" />
+    <None Include="packages.config" />
+    <Content Include="Scripts\jquery-3.3.1.slim.min.map" />
+    <Content Include="Scripts\jquery-3.3.1.min.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <Target Name="MvcBuildViews" AfterTargets="AfterBuild" Condition="'$(MvcBuildViews)'=='true'">
+    <AspNetCompiler VirtualPath="temp" PhysicalPath="$(WebProjectOutputDir)" />
+  </Target>
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>40672</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:40676/</IISUrl>
+          <OverrideIISAppRootUrl>True</OverrideIISAppRootUrl>
+          <IISAppRootUrl>http://localhost:40676/</IISAppRootUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target> -->
+</Project>

@@ -1,0 +1,39 @@
+﻿@model IEnumerable<OnlineSchool.Models.GUARDIANREVIEW>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Review Table</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.ReviewDescription)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.GUARDIAN.GuardianName)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.ReviewDescription)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.GUARDIAN.GuardianName)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.Review_ID }) |
+            @Html.ActionLink("Details", "Details", new { id=item.Review_ID }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.Review_ID })
+        </td>
+    </tr>
+}
+
+</table>

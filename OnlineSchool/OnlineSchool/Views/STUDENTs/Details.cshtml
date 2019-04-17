@@ -1,0 +1,82 @@
+﻿@model OnlineSchool.Models.STUDENT
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>STUDENT</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.StudentName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.StudentName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.StudentEmail)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.StudentEmail)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.StudentPassword)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.StudentPassword)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.StudentContactNumber)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.StudentContactNumber)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.StudentAddress)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.StudentAddress)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ADMIN.AdminName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ADMIN.AdminName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CLASS.ClassName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CLASS.ClassName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.SECTION.SectionName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.SECTION.SectionName)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Student_ID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

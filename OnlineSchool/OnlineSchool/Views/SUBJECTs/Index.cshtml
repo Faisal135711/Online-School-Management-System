@@ -1,0 +1,51 @@
+﻿@model IEnumerable<OnlineSchool.Models.SUBJECT>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Subject Table</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.SubjectName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ADMIN.AdminName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CLASS.ClassName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TEACHER.TeacherName)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.SubjectName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ADMIN.AdminName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CLASS.ClassName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.TEACHER.TeacherName)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.Subject_ID }) |
+            @Html.ActionLink("Details", "Details", new { id=item.Subject_ID }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.Subject_ID })
+        </td>
+    </tr>
+}
+
+</table>

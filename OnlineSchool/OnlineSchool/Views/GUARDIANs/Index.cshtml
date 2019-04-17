@@ -1,0 +1,69 @@
+﻿@model IEnumerable<OnlineSchool.Models.GUARDIAN>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Guardian Table</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.GuardianName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.GuardianEmail)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.GuardianPassword)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.GuardianContactNumber)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.GuardianAddress)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ADMIN.AdminName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.STUDENT.StudentName)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.GuardianName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.GuardianEmail)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.GuardianPassword)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.GuardianContactNumber)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.GuardianAddress)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ADMIN.AdminName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.STUDENT.StudentName)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.Guardian_ID }) |
+            @Html.ActionLink("Details", "Details", new { id=item.Guardian_ID }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.Guardian_ID })
+        </td>
+    </tr>
+}
+
+</table>

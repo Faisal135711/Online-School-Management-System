@@ -1,0 +1,58 @@
+﻿@model OnlineSchool.Models.ADMIN
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>ADMIN</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.AdminName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AdminName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.AdminEmail)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AdminEmail)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.AdminPassword)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AdminPassword)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.AdminContactNumber)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AdminContactNumber)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.AdminAddress)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AdminAddress)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Admin_ID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
